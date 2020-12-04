@@ -114,12 +114,17 @@ def main():
     cur = conn.cursor()
     create_covid_cases_table(cur,conn)
 
-    index = 1
-    for date in date_lst_14:
-        data = get_covid_cases_data(cur, conn, date, woeid)
-        add_data_to_database(cur,conn,data)
-        print(index)
-        index += 1
+
+    all_dates = [date_lst_1, date_lst_2, date_lst_3, date_lst_4, date_lst_5, date_lst_6, date_lst_7, date_lst_8, date_lst_9, 
+            date_lst_10, date_lst_11, date_lst_12, date_lst_13, date_lst_14]
+
+    for date_list in all_dates:
+        index = 1
+        for date in date_list:
+            data = get_covid_cases_data(cur, conn, date, woeid)
+            add_data_to_database(cur,conn,data)
+            print(index)
+            index += 1
 
     #data = get_covid_cases_data(cur,conn,date_test, woeid)
     #print(data)
