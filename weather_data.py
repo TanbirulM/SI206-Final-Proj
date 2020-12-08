@@ -5,7 +5,7 @@ import requests
 import json
 import os 
 
-def create_covid_cases_table(cur, conn):
+def create_weather_table(cur, conn):
     cur.execute("CREATE TABLE IF NOT EXISTS Weather (Date INTEGER, Low INTEGER, High Integer)")
     conn.commit()
 
@@ -14,7 +14,7 @@ def get_request_url(date, woeid):
     request_url = base_url + "/api/location/{}/{}/" .format(woeid, date)
     return request_url
 
-def get_covid_cases_data(cur, conn, date, woeid):
+def get_weather_data(cur, conn, date, woeid):
     url = get_request_url(date, woeid)
     cur.execute("SELECT * FROM Weather WHERE Date = ?", (date, ))
     exists = cur.fetchone()
@@ -173,7 +173,7 @@ def main():
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
-    create_covid_cases_table(cur,conn)
+    create_weather_table(cur,conn)
 
 
     all_dates = [date_lst_1, date_lst_2, date_lst_3, date_lst_4, date_lst_5, date_lst_6, date_lst_7, date_lst_8, date_lst_9, 
@@ -181,7 +181,7 @@ def main():
 
     index = 1
     for date in date_lst_29:
-        data = get_covid_cases_data(cur, conn, date, woeid)
+        data = get_weather_data(cur, conn, date, woeid)
         add_data_to_database(cur,conn,data)
         print("Number of data grabbed: ", index)
         index += 1
