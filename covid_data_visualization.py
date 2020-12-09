@@ -1,20 +1,16 @@
 import sqlite3
 import os
-import csv
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.dates import DateFormatter
-import seaborn as sns
-import pandas as pd
 import datetime
 from dateutil.parser import parse
 from datetime import datetime
 from matplotlib import cbook, dates
 from matplotlib.ticker import Formatter
 from numpy import mean
-from pandas.plotting import register_matplotlib_converters
-register_matplotlib_converters()
+
  
 def covid_date_list(db_name, table_name):
    path = os.path.dirname(os.path.abspath(__file__))

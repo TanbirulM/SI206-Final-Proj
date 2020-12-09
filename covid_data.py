@@ -228,6 +228,7 @@ def main():
         data = get_covid_cases_data(cur,conn,date)
         add_data_to_database(cur,conn,data)
 
+    cur.execute("SELECT Cases.Date, Cases.Cases, Crimes.Offense FROM Cases JOIN Crimes ON Cases.Date = Crimes.Date")
 
 
 

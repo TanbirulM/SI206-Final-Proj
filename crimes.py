@@ -32,6 +32,41 @@ def addData(cur, conn, data):
                 cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
         conn.commit()
 
+# def setUpCrimeNumberTable(cur,conn):
+        #cur.execute("CREATE TABLE IF NOT EXISTS Crime Totals (Date INTEGER, Crimes INTEGER")
+        #conn.commit()
+
+def getCrimeDatesList(db_name, table_name):
+   path = os.path.dirname(os.path.abspath(__file__))
+   conn = sqlite3.connect(path+'/'+ db_name)
+   cur = conn.cursor()
+
+   covid_dates_list = []
+     
+   cur.execute('SELECT * FROM ' + table_name)
+   rows = cur.fetchall()
+ 
+   for i in rows:
+       date = i[0]
+       covid_dates_list.append(date)
+   cur.close()
+   return covid_dates_list
+
+def getCrimeTotals(cur,conn,covid_dates_list):
+        crime_totals_dict = {}
+        for date in covid_dates_list:
+                cur.execute("SELECT Offense FROM Crimes WHERE Date = ?", (date,))
+                crimes = cur.fetchall()
+                count = len(crimes)
+                crime_totals_dict[date] = count
+        dictionary_items = crime_totals_dict.items()
+        sorted_crime_tuples = sorted(dictionary_items)
+        print(sorted_crime_tuples)
+        return sorted_crime_tuples
+
+
+
+
 def main():
         path = os.path.dirname(os.path.abspath(__file__))
         conn = sqlite3.connect(path+ '/' + "covid_data.db")
@@ -39,6 +74,8 @@ def main():
         setUpCrimesTable(cur,conn)
         data = getCrimesData(cur,conn)
         addData(cur,conn,data)
+        dates = getCrimeDatesList("covid_data.db","Crimes")
+        getCrimeTotals(cur,conn,dates)
   
 
 if __name__ == "__main__":
