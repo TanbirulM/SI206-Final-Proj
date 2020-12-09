@@ -154,6 +154,7 @@ def main():
         date_string = "202011" + str(i)
         november_dates_list2.append(date_string)
 
+
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
