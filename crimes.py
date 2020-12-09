@@ -89,7 +89,8 @@ def main():
        # crime_list = getCrimeTotals(cur,conn,dates)
        # addCrimeTotals(cur,conn,crime_list)
 
-  #      cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN Crimes ON Cases.Date = CrimeTotals.Date")
+        cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
+        conn.commit()
   
 
 if __name__ == "__main__":
