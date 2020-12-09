@@ -73,6 +73,14 @@ def addCrimeTotals(cur,conn,data):
                 cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
                 conn.commit()
 
+def setUpCrimeAndCovidTable(cur,conn):
+        cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovid (Date INTEGER, Cases INTEGER, Crimes INTEGER)")
+        conn.commit()
+
+def addDataCrimeAndCovid(cur,conn,data):
+        for i in range(25):
+                cur.execute("INSERT INTO CrimesCovid (Date,Cases,Crimes) Values (?,?,?)",(data[i][0],data[i][1],data[i][2],))
+                conn.commit()
 
 
 
@@ -90,7 +98,11 @@ def main():
        # addCrimeTotals(cur,conn,crime_list)
 
         cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
+        results = cur.fetchall()
         conn.commit()
+        print(results)
+        setUpCrimeAndCovidTable(cur,conn)
+        addDataCrimeAndCovid(cur,conn,results)
   
 
 if __name__ == "__main__":
