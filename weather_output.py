@@ -80,14 +80,39 @@ def create_pie_chart(range_lst):
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
     plt.title("Pie Chart of Weather Patterns from 2019-2018")
 
-    #plt.savefig("weather_pie_chart.png")
+    plt.savefig("weather_pie_chart.png")
     plt.show()
 
+#calculates the average low temperatures between January 1, 2019 to December 4 2020
+def calculate_average_low(lst):
+    count = 0
+    total = 0
+    for i in lst:
+        total += i[1]
+        count += 1
+
+    return total/count    
+    
+#calculates the average high temperatures between January 1, 2019 to December 4 2020    
+def calculate_average_high(lst):
+    count = 0
+    total = 0 
+    for i in lst:
+        total += i[2]
+        count += 1
+    
+    return total/count    
 
 def main():
-    weather_range = get_weather_ranges(weather_lst('covid_data.db', 'Weather'))
+    data_lst = weather_lst('covid_data.db', 'Weather')
+    weather_range = get_weather_ranges(data_lst)
     write_csv(weather_range)
     create_pie_chart(weather_range)
+    average_low = calculate_average_low(data_lst)
+    average_high = calculate_average_high(data_lst)
+
+    print('The avererage high temerpature between 2019 and 2018 is ', average_low)
+    print('The avererage high temerpature between 2019 and 2018 is ', average_high)
 
 if __name__ == "__main__":
     main()

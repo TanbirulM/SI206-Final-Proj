@@ -51,7 +51,8 @@ def main():
     search_query = "nationwide"
     search_limit = 100
 
-
+    # we are searching the records in the food enforcement report endpoint for matches with nationwide in the distribution_pattern field
+    # We are requesting to see the first 100 records that match.
     data = get_food_recall_data(cur, conn, search_query, search_limit)
     add_data_to_database(cur,conn,data)
 
