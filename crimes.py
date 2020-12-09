@@ -32,9 +32,9 @@ def addData(cur, conn, data):
                 cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
         conn.commit()
 
-# def setUpCrimeNumberTable(cur,conn):
-        #cur.execute("CREATE TABLE IF NOT EXISTS Crime Totals (Date INTEGER, Crimes INTEGER")
-        #conn.commit()
+def setUpCrimeNumberTable(cur,conn):
+        cur.execute("CREATE TABLE IF NOT EXISTS CrimeTotals (Date INTEGER, Crimes INTEGER)")
+        conn.commit()
 
 def getCrimeDatesList(db_name, table_name):
    path = os.path.dirname(os.path.abspath(__file__))
@@ -61,8 +61,18 @@ def getCrimeTotals(cur,conn,covid_dates_list):
                 crime_totals_dict[date] = count
         dictionary_items = crime_totals_dict.items()
         sorted_crime_tuples = sorted(dictionary_items)
-        print(sorted_crime_tuples)
         return sorted_crime_tuples
+
+def addCrimeTotals(cur,conn,data):
+        dates_list = []
+        crime_totals_list = []
+        for item in data:
+                dates_list.append(item[0])
+                crime_totals_list.append(item[1])
+        for i in range(166, len(dates_list)):
+                cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                conn.commit()
+
 
 
 
@@ -72,10 +82,14 @@ def main():
         conn = sqlite3.connect(path+ '/' + "covid_data.db")
         cur = conn.cursor()
         setUpCrimesTable(cur,conn)
-        data = getCrimesData(cur,conn)
-        addData(cur,conn,data)
-        dates = getCrimeDatesList("covid_data.db","Crimes")
-        getCrimeTotals(cur,conn,dates)
+        setUpCrimeNumberTable(cur,conn)
+       # data = getCrimesData(cur,conn)
+       # addData(cur,conn,data)
+       # dates = getCrimeDatesList("covid_data.db","Crimes")
+       # crime_list = getCrimeTotals(cur,conn,dates)
+       # addCrimeTotals(cur,conn,crime_list)
+
+  #      cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN Crimes ON Cases.Date = CrimeTotals.Date")
   
 
 if __name__ == "__main__":

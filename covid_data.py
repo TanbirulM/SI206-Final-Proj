@@ -39,6 +39,7 @@ def add_data_to_database(cur, conn, data):
         conn.commit()
 
 
+
 def main():
 
     march_dates_list = []
@@ -58,7 +59,7 @@ def main():
         april_dates_list1.append(date_string)
     
     april_dates_list2 = []
-    for i in range(27,31):
+    for i in range(26,31):
         date_string = "202004" + str(i)
         april_dates_list2.append(date_string)
 
@@ -71,7 +72,7 @@ def main():
         may_dates_list1.append(date_string)
     
     may_dates_list2 = []
-    for i in range(27,32):
+    for i in range(26,32):
         date_string = "202005" + str(i)
         may_dates_list2.append(date_string)
 
@@ -84,7 +85,7 @@ def main():
         june_dates_list1.append(date_string)
     
     june_dates_list2 = []
-    for i in range(27,31):
+    for i in range(26,31):
         date_string = "202006" + str(i)
         june_dates_list2.append(date_string)
 
@@ -97,7 +98,7 @@ def main():
         july_dates_list1.append(date_string)
     
     july_dates_list2 = []
-    for i in range(27,32):
+    for i in range(26,32):
         date_string = "202007" + str(i)
         july_dates_list2.append(date_string)
 
@@ -110,7 +111,7 @@ def main():
         august_dates_list1.append(date_string)
     
     august_dates_list2 = []
-    for i in range(27,32):
+    for i in range(26,32):
         date_string = "202008" + str(i)
         august_dates_list2.append(date_string)
     
@@ -124,7 +125,7 @@ def main():
         september_dates_list1.append(date_string)
     
     september_dates_list2 = []
-    for i in range(27,31):
+    for i in range(26,31):
         date_string = "202009" + str(i)
         september_dates_list2.append(date_string)
 
@@ -137,7 +138,7 @@ def main():
         october_dates_list1.append(date_string)
     
     october_dates_list2 = []
-    for i in range(27,32):
+    for i in range(26,32):
         date_string = "202010" + str(i)
         october_dates_list2.append(date_string)
 
@@ -150,14 +151,20 @@ def main():
         november_dates_list1.append(date_string)
     
     november_dates_list2 = []
-    for i in range(27,31):
+    for i in range(26,31):
         date_string = "202011" + str(i)
         november_dates_list2.append(date_string)
+
+    december_dates_list = []
+    for i in range(1,8):
+        date_string = "2020120" + str(i)
+        december_dates_list.append(date_string)
 
 
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
+    cur.execute("DROP TABLE Cases")
     create_covid_cases_table(cur,conn)
 
     for date in march_dates_list:
@@ -184,7 +191,7 @@ def main():
         data = get_covid_cases_data(cur,conn,date)
         add_data_to_database(cur,conn,data)
 
-    for date in june_dates_list1:
+    for date in june_dates_list2:
         data = get_covid_cases_data(cur,conn,date)
         add_data_to_database(cur,conn,data)
 
@@ -228,7 +235,11 @@ def main():
         data = get_covid_cases_data(cur,conn,date)
         add_data_to_database(cur,conn,data)
 
-    cur.execute("SELECT Cases.Date, Cases.Cases, Crimes.Offense FROM Cases JOIN Crimes ON Cases.Date = Crimes.Date")
+    for date in december_dates_list:
+        data = get_covid_cases_data(cur,conn,date)
+        add_data_to_database(cur,conn,data)
+
+
 
 
 
