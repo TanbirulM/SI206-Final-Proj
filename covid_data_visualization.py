@@ -56,6 +56,7 @@ def create_covid_line_graph(covid_dates_list,covid_cases_list):
    plt.xlabel('Date')
    plt.ylabel('# of Positive Cases')
    plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
+   plt.savefig("covid_line_graph.png")
    plt.show()
 
 #calculate the average daily increase in positive covid cases in DC 
