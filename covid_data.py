@@ -5,43 +5,73 @@ import requests
 import json
 import os 
 
+
+#create table that will contain data for number of positive COVID-19 cases in DC given a date
 def create_covid_cases_table(cur, conn):
     cur.execute("CREATE TABLE IF NOT EXISTS Cases (Date INTEGER, Cases INTEGER)")
     conn.commit()
 
+#get the request url to access the COVID tracking API based on the date
 def get_request_url(date):
     base_url = "https://api.covidtracking.com"
     request_url = base_url + "/v1/states/dc/{}.json" .format(date)
     return request_url
 
+#gets data from the API only if data does not already exist in Cases table
 def get_covid_cases_data(cur, conn, date):
+    #gets request url
     url = get_request_url(date)
+
+    #checking to see if date is already in table
     cur.execute("SELECT * FROM Cases WHERE Date = ?", (date, ))
     exists = cur.fetchone()
+
+    #if data not already in table, try grabbing data and returning # of positive cases
     if exists == None:
         try:
             response = requests.get(url)
             json_data = json.loads(response.text)
-            return json_data
+            cases = json_data.get['positive']
+            return cases
+    #if exception occurs, prints exception
         except:
             print("Exception")
             return None
+    #lets me know if data does already exist in table 
     else:
         print("Data already exists")
         return None
     
-
-def add_data_to_database(cur, conn, data):
-    if data != None:
-        date = data.get('date')
-        cases = data.get('positive')
-        cur.execute("INSERT INTO Cases (Date, Cases) VALUES (?,?)",(date,cases))
-        conn.commit()
+#adds data to database table Cases 25 items at a time for the first 100 items
+def add_data_to_database(cur, conn, dates,cases):
+    cur.execute("SELECT * FROM Crimes")
+    entries = cur.fetchall()
+    if len(entries) == 0:
+        for i in range(25):
+            cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+            conn.commit()
+        elif len(entries) == 25:
+            for i in range(25,50):
+                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+                conn.commit()
+        elif len(entries) == 50:
+            for i in range(50,75):
+                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+                        conn.commit()
+        elif len(entries) == 75:
+            for i in range(75,100):
+                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+                conn.commit()
+        elif len(entries) == 100:
+            for i in range(100, len(dates)):
+                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+                conn.commit()
 
 
 
 def main():
 
+#the following lists are just creating lists of dates in the appropriate format for the API
     march_dates_list = []
     for i in range (7,32):
         if i < 10:
@@ -160,88 +190,30 @@ def main():
         date_string = "2020120" + str(i)
         december_dates_list.append(date_string)
 
+#this adds all of the lists together into one final list with every date from March 7th-December 7th in the appropriate format for the COVID API
+    total_dates = []
+    total_dates = [march_dates_list,april_dates_list1,april_dates_list2,may_dates_list1,may_dates_list2,june_dates_list1,june_dates_list2,july_dates_list1,july_dates_list2,august_dates_list1,august_dates_list2,september_dates_list1,september_dates_list2,october_dates_list1,october_dates_list2,november_dates_list1,november_dates_list2,december_dates_list]
+    flat_dates_list = []
+    for sublist in total_dates:
+        for item in sublist:
+            flat_dates_list.append(item)
 
+ 
+#getting the current working directory, connecting to the database, and creating the Cases table
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
-    cur.execute("DROP TABLE Cases")
     create_covid_cases_table(cur,conn)
 
-    for date in march_dates_list:
+#getting a list of the positive cases in chronological order to be added to the table
+    cases_list = []
+    for date in flat_dates_list:
+        url = get_request_url(date)
         data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in april_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in april_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-    
-    for date in may_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-    
-    for date in may_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in june_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in june_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in july_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in july_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in august_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in august_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in september_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in september_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in october_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in october_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in november_dates_list1:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in november_dates_list2:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-    for date in december_dates_list:
-        data = get_covid_cases_data(cur,conn,date)
-        add_data_to_database(cur,conn,data)
-
-
-
-
+        cases_list.append(data)
+        
+#adding data to Cases table based on dates list and postiive cases list
+    add_data_to_database(cur,conn,flat_dates_list,cases_list)
 
 if __name__ == "__main__":
     main()
