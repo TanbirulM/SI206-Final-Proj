@@ -46,51 +46,7 @@ def add_data_to_database(cur, conn, data):
         cur.execute("INSERT INTO Weather (Date, Low, High) VALUES (?,?,?)",(date, low, high))
         conn.commit()
 
-#calculate correlation between weather(degrees of temperature) and crime by dividing number of daily crimes by daily average temperature
-def calc_weathercrimecorr(cur,conn):
 
- 
-
-    #gets average temp for the dates in CrimeTotals table
-    cur.execute("SELECT Date FROM CrimeTotals")
-    dates = cur.fetchall()
-    conn.commit
-
-    average_temp = []
-    missing_temps = []
-  
-    for date in dates:
-        cur.execute("SELECT Low, High FROM Weather WHERE Date = (?)", (date[0],))
-        tup = cur.fetchall()
-        conn.commit
-        if len(tup) == 1:
-            average_temp.append((tup[0][0]+tup[0][1])/2)
-        elif len(tup) == 0:
-            missing_temps.append(date[0])
-             
-
-   
-    
-    for date in dates:
-        for miss in missing_temps:
-            if date[0] == miss:
-                dates.remove(date)
-
-    #gets list of daily crime totals 
-    crime_totals = []
-    for date in dates:
-        cur.execute("SELECT Crimes FROM CrimeTotals WHERE Date = (?)", (date[0],))
-        crimes = cur.fetchall()
-        conn.commit
-        crime_totals.append(crimes[0][0])
-
-  
-    crime_weather_corr = {}
-    #calculates correlation = daily number of crimes/daily average temperature and stores it in dict with the date as the key
-    for i in range(len(crime_totals)-1):
-        crime_weather_corr[dates[i][0]] = crime_totals[i]/average_temp[i]
-    
-    return crime_weather_corr
     
 
 
@@ -210,7 +166,7 @@ def main():
                 add_data_to_database(cur,conn,data)
                 
 
-    print(calc_weathercrimecorr(cur,conn))
+    
 
 
 

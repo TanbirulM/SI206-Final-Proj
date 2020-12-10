@@ -1,0 +1,1232 @@
+Correlation between daily crimes and daily covid cases:
+
+On 2020-03-07 the correlation between number of daily crimes and number of daily covid cases was N/A crimes per covid case.
+
+On 2020-03-08 the correlation between number of daily crimes and number of daily covid cases was 51.0 crimes per covid case.
+
+On 2020-03-09 the correlation between number of daily crimes and number of daily covid cases was 99.0 crimes per covid case.
+
+On 2020-03-10 the correlation between number of daily crimes and number of daily covid cases was 17.6 crimes per covid case.
+
+On 2020-03-11 the correlation between number of daily crimes and number of daily covid cases was 18.6 crimes per covid case.
+
+On 2020-03-12 the correlation between number of daily crimes and number of daily covid cases was 7.8 crimes per covid case.
+
+On 2020-03-13 the correlation between number of daily crimes and number of daily covid cases was 7.8 crimes per covid case.
+
+On 2020-03-14 the correlation between number of daily crimes and number of daily covid cases was 10.8 crimes per covid case.
+
+On 2020-03-15 the correlation between number of daily crimes and number of daily covid cases was 5.0625 crimes per covid case.
+
+On 2020-03-16 the correlation between number of daily crimes and number of daily covid cases was 4.764705882352941 crimes per covid case.
+
+On 2020-03-17 the correlation between number of daily crimes and number of daily covid cases was 2.8636363636363638 crimes per covid case.
+
+On 2020-03-18 the correlation between number of daily crimes and number of daily covid cases was 2.2903225806451615 crimes per covid case.
+
+On 2020-03-19 the correlation between number of daily crimes and number of daily covid cases was 1.1538461538461537 crimes per covid case.
+
+On 2020-03-20 the correlation between number of daily crimes and number of daily covid cases was 0.8591549295774648 crimes per covid case.
+
+On 2020-03-21 the correlation between number of daily crimes and number of daily covid cases was 0.5714285714285714 crimes per covid case.
+
+On 2020-03-22 the correlation between number of daily crimes and number of daily covid cases was 0.47959183673469385 crimes per covid case.
+
+On 2020-03-23 the correlation between number of daily crimes and number of daily covid cases was 0.4827586206896552 crimes per covid case.
+
+On 2020-03-24 the correlation between number of daily crimes and number of daily covid cases was 0.48175182481751827 crimes per covid case.
+
+On 2020-03-25 the correlation between number of daily crimes and number of daily covid cases was 0.3333333333333333 crimes per covid case.
+
+On 2020-03-26 the correlation between number of daily crimes and number of daily covid cases was 0.2813852813852814 crimes per covid case.
+
+On 2020-03-27 the correlation between number of daily crimes and number of daily covid cases was 0.19101123595505617 crimes per covid case.
+
+On 2020-03-28 the correlation between number of daily crimes and number of daily covid cases was 0.12828947368421054 crimes per covid case.
+
+On 2020-03-29 the correlation between number of daily crimes and number of daily covid cases was 0.16666666666666666 crimes per covid case.
+
+On 2020-03-30 the correlation between number of daily crimes and number of daily covid cases was 0.17206982543640897 crimes per covid case.
+
+On 2020-03-31 the correlation between number of daily crimes and number of daily covid cases was 0.1292929292929293 crimes per covid case.
+
+On 2020-04-01 the correlation between number of daily crimes and number of daily covid cases was 0.08020477815699659 crimes per covid case.
+
+On 2020-04-02 the correlation between number of daily crimes and number of daily covid cases was 0.06278713629402756 crimes per covid case.
+
+On 2020-04-03 the correlation between number of daily crimes and number of daily covid cases was 0.05548216644649934 crimes per covid case.
+
+On 2020-04-04 the correlation between number of daily crimes and number of daily covid cases was 0.0598669623059867 crimes per covid case.
+
+On 2020-04-05 the correlation between number of daily crimes and number of daily covid cases was 0.04408817635270541 crimes per covid case.
+
+On 2020-04-06 the correlation between number of daily crimes and number of daily covid cases was 0.05834092980856882 crimes per covid case.
+
+On 2020-04-07 the correlation between number of daily crimes and number of daily covid cases was 0.0495458298926507 crimes per covid case.
+
+On 2020-04-08 the correlation between number of daily crimes and number of daily covid cases was 0.034722222222222224 crimes per covid case.
+
+On 2020-04-09 the correlation between number of daily crimes and number of daily covid cases was 0.03217334208798424 crimes per covid case.
+
+On 2020-04-10 the correlation between number of daily crimes and number of daily covid cases was 0.030120481927710843 crimes per covid case.
+
+On 2020-04-11 the correlation between number of daily crimes and number of daily covid cases was 0.02924634420697413 crimes per covid case.
+
+On 2020-04-12 the correlation between number of daily crimes and number of daily covid cases was 0.026133333333333335 crimes per covid case.
+
+On 2020-04-13 the correlation between number of daily crimes and number of daily covid cases was 0.02404092071611253 crimes per covid case.
+
+On 2020-04-14 the correlation between number of daily crimes and number of daily covid cases was 0.03206997084548105 crimes per covid case.
+
+On 2020-04-15 the correlation between number of daily crimes and number of daily covid cases was 0.02275830678197542 crimes per covid case.
+
+On 2020-04-16 the correlation between number of daily crimes and number of daily covid cases was 0.02595744680851064 crimes per covid case.
+
+On 2020-04-17 the correlation between number of daily crimes and number of daily covid cases was 0.018982229402261713 crimes per covid case.
+
+On 2020-04-18 the correlation between number of daily crimes and number of daily covid cases was 0.009752438109527382 crimes per covid case.
+
+On 2020-04-19 the correlation between number of daily crimes and number of daily covid cases was 0.021482277121374866 crimes per covid case.
+
+On 2020-04-20 the correlation between number of daily crimes and number of daily covid cases was 0.01708233686368295 crimes per covid case.
+
+On 2020-04-21 the correlation between number of daily crimes and number of daily covid cases was 0.01872175597159458 crimes per covid case.
+
+On 2020-04-22 the correlation between number of daily crimes and number of daily covid cases was 0.025265127885215222 crimes per covid case.
+
+On 2020-04-23 the correlation between number of daily crimes and number of daily covid cases was 0.021124665278191016 crimes per covid case.
+
+On 2020-04-24 the correlation between number of daily crimes and number of daily covid cases was 0.01927437641723356 crimes per covid case.
+
+On 2020-04-25 the correlation between number of daily crimes and number of daily covid cases was 0.015139226818058935 crimes per covid case.
+
+On 2020-04-26 the correlation between number of daily crimes and number of daily covid cases was 0.009372559229367352 crimes per covid case.
+
+On 2020-04-27 the correlation between number of daily crimes and number of daily covid cases was 0.01593011305241521 crimes per covid case.
+
+On 2020-04-28 the correlation between number of daily crimes and number of daily covid cases was 0.019529293940911366 crimes per covid case.
+
+On 2020-04-29 the correlation between number of daily crimes and number of daily covid cases was 0.015343399902581588 crimes per covid case.
+
+On 2020-04-30 the correlation between number of daily crimes and number of daily covid cases was 0.01364792967846403 crimes per covid case.
+
+On 2020-05-01 the correlation between number of daily crimes and number of daily covid cases was 0.011592958351223702 crimes per covid case.
+
+On 2020-05-02 the correlation between number of daily crimes and number of daily covid cases was 0.008130081300813009 crimes per covid case.
+
+On 2020-05-03 the correlation between number of daily crimes and number of daily covid cases was 0.00777511961722488 crimes per covid case.
+
+On 2020-05-04 the correlation between number of daily crimes and number of daily covid cases was 0.013152804642166345 crimes per covid case.
+
+On 2020-05-05 the correlation between number of daily crimes and number of daily covid cases was 0.013340849304772641 crimes per covid case.
+
+On 2020-05-06 the correlation between number of daily crimes and number of daily covid cases was 0.010437648782274309 crimes per covid case.
+
+On 2020-05-07 the correlation between number of daily crimes and number of daily covid cases was 0.007958967102935975 crimes per covid case.
+
+On 2020-05-08 the correlation between number of daily crimes and number of daily covid cases was 0.010510255975589083 crimes per covid case.
+
+On 2020-05-09 the correlation between number of daily crimes and number of daily covid cases was 0.00688298918387414 crimes per covid case.
+
+On 2020-05-10 the correlation between number of daily crimes and number of daily covid cases was 0.01020408163265306 crimes per covid case.
+
+On 2020-05-11 the correlation between number of daily crimes and number of daily covid cases was 0.009078102989513226 crimes per covid case.
+
+On 2020-05-12 the correlation between number of daily crimes and number of daily covid cases was 0.006322282189668466 crimes per covid case.
+
+On 2020-05-13 the correlation between number of daily crimes and number of daily covid cases was 0.008353584447144593 crimes per covid case.
+
+On 2020-05-14 the correlation between number of daily crimes and number of daily covid cases was 0.007868171021377672 crimes per covid case.
+
+On 2020-05-15 the correlation between number of daily crimes and number of daily covid cases was 0.007713578809489158 crimes per covid case.
+
+On 2020-05-16 the correlation between number of daily crimes and number of daily covid cases was 0.007810281170122124 crimes per covid case.
+
+On 2020-05-17 the correlation between number of daily crimes and number of daily covid cases was 0.007300294819598483 crimes per covid case.
+
+On 2020-05-18 the correlation between number of daily crimes and number of daily covid cases was 0.00921595598349381 crimes per covid case.
+
+On 2020-05-19 the correlation between number of daily crimes and number of daily covid cases was 0.009147161689534571 crimes per covid case.
+
+On 2020-05-20 the correlation between number of daily crimes and number of daily covid cases was 0.011389219970864787 crimes per covid case.
+
+On 2020-05-21 the correlation between number of daily crimes and number of daily covid cases was 0.008602978941961993 crimes per covid case.
+
+On 2020-05-22 the correlation between number of daily crimes and number of daily covid cases was 0.00798175598631699 crimes per covid case.
+
+On 2020-05-23 the correlation between number of daily crimes and number of daily covid cases was 0.007532011046949535 crimes per covid case.
+
+On 2020-05-24 the correlation between number of daily crimes and number of daily covid cases was 0.00590007532011047 crimes per covid case.
+
+On 2020-05-25 the correlation between number of daily crimes and number of daily covid cases was 0.006200607902735562 crimes per covid case.
+
+On 2020-05-26 the correlation between number of daily crimes and number of daily covid cases was 0.00827933765298776 crimes per covid case.
+
+On 2020-05-27 the correlation between number of daily crimes and number of daily covid cases was 0.009279086366880799 crimes per covid case.
+
+On 2020-05-28 the correlation between number of daily crimes and number of daily covid cases was 0.007889778615167216 crimes per covid case.
+
+On 2020-05-29 the correlation between number of daily crimes and number of daily covid cases was 0.008432888264230498 crimes per covid case.
+
+On 2020-05-30 the correlation between number of daily crimes and number of daily covid cases was 0.004818171389239417 crimes per covid case.
+
+On 2020-05-31 the correlation between number of daily crimes and number of daily covid cases was 0.011362345188046814 crimes per covid case.
+
+On 2020-06-01 the correlation between number of daily crimes and number of daily covid cases was 0.020210003387151405 crimes per covid case.
+
+On 2020-06-02 the correlation between number of daily crimes and number of daily covid cases was 0.01350438892640108 crimes per covid case.
+
+On 2020-06-03 the correlation between number of daily crimes and number of daily covid cases was 0.008762200532386868 crimes per covid case.
+
+On 2020-06-04 the correlation between number of daily crimes and number of daily covid cases was 0.009868421052631578 crimes per covid case.
+
+On 2020-06-05 the correlation between number of daily crimes and number of daily covid cases was 0.007065985433199261 crimes per covid case.
+
+On 2020-06-06 the correlation between number of daily crimes and number of daily covid cases was 0.005394325169921243 crimes per covid case.
+
+On 2020-06-07 the correlation between number of daily crimes and number of daily covid cases was 0.007393913416202315 crimes per covid case.
+
+On 2020-06-08 the correlation between number of daily crimes and number of daily covid cases was 0.009053147300031952 crimes per covid case.
+
+On 2020-06-09 the correlation between number of daily crimes and number of daily covid cases was 0.008549715009499683 crimes per covid case.
+
+On 2020-06-10 the correlation between number of daily crimes and number of daily covid cases was 0.009436929852154765 crimes per covid case.
+
+On 2020-06-11 the correlation between number of daily crimes and number of daily covid cases was 0.008655751381791636 crimes per covid case.
+
+On 2020-06-12 the correlation between number of daily crimes and number of daily covid cases was 0.006215040397762586 crimes per covid case.
+
+On 2020-06-13 the correlation between number of daily crimes and number of daily covid cases was 0.005355855391904418 crimes per covid case.
+
+On 2020-06-14 the correlation between number of daily crimes and number of daily covid cases was 0.008190846728780588 crimes per covid case.
+
+On 2020-06-15 the correlation between number of daily crimes and number of daily covid cases was 0.007959995917950812 crimes per covid case.
+
+On 2020-06-16 the correlation between number of daily crimes and number of daily covid cases was 0.008657567732735792 crimes per covid case.
+
+On 2020-06-17 the correlation between number of daily crimes and number of daily covid cases was 0.005788565045191429 crimes per covid case.
+
+On 2020-06-18 the correlation between number of daily crimes and number of daily covid cases was 0.005553872563869535 crimes per covid case.
+
+On 2020-06-19 the correlation between number of daily crimes and number of daily covid cases was 0.004521704180064309 crimes per covid case.
+
+On 2020-06-20 the correlation between number of daily crimes and number of daily covid cases was 0.005709134615384615 crimes per covid case.
+
+On 2020-06-21 the correlation between number of daily crimes and number of daily covid cases was 0.006586826347305389 crimes per covid case.
+
+On 2020-06-22 the correlation between number of daily crimes and number of daily covid cases was 0.007059057466693179 crimes per covid case.
+
+On 2020-06-23 the correlation between number of daily crimes and number of daily covid cases was 0.008024569050921339 crimes per covid case.
+
+On 2020-06-24 the correlation between number of daily crimes and number of daily covid cases was 0.007207740916271722 crimes per covid case.
+
+On 2020-06-25 the correlation between number of daily crimes and number of daily covid cases was 0.007579486169898612 crimes per covid case.
+
+On 2020-06-26 the correlation between number of daily crimes and number of daily covid cases was 0.004614629356897398 crimes per covid case.
+
+On 2020-06-27 the correlation between number of daily crimes and number of daily covid cases was 0.005579483163664839 crimes per covid case.
+
+On 2020-06-28 the correlation between number of daily crimes and number of daily covid cases was 0.007318501170960188 crimes per covid case.
+
+On 2020-06-29 the correlation between number of daily crimes and number of daily covid cases was 0.007092887679751263 crimes per covid case.
+
+On 2020-06-30 the correlation between number of daily crimes and number of daily covid cases was 0.008134017623704852 crimes per covid case.
+
+On 2020-07-01 the correlation between number of daily crimes and number of daily covid cases was 0.005402797877472262 crimes per covid case.
+
+On 2020-07-02 the correlation between number of daily crimes and number of daily covid cases was 0.0052935514918190565 crimes per covid case.
+
+On 2020-07-03 the correlation between number of daily crimes and number of daily covid cases was 0.005366554863440345 crimes per covid case.
+
+On 2020-07-04 the correlation between number of daily crimes and number of daily covid cases was 0.005934718100890208 crimes per covid case.
+
+On 2020-07-05 the correlation between number of daily crimes and number of daily covid cases was 0.005056286968135852 crimes per covid case.
+
+On 2020-07-06 the correlation between number of daily crimes and number of daily covid cases was 0.007132667617689016 crimes per covid case.
+
+On 2020-07-07 the correlation between number of daily crimes and number of daily covid cases was 0.006528526823729776 crimes per covid case.
+
+On 2020-07-08 the correlation between number of daily crimes and number of daily covid cases was 0.008081187746664161 crimes per covid case.
+
+On 2020-07-09 the correlation between number of daily crimes and number of daily covid cases was 0.005431220151699597 crimes per covid case.
+
+On 2020-07-10 the correlation between number of daily crimes and number of daily covid cases was 0.00577119985106581 crimes per covid case.
+
+On 2020-07-11 the correlation between number of daily crimes and number of daily covid cases was 0.005555041199888899 crimes per covid case.
+
+On 2020-07-12 the correlation between number of daily crimes and number of daily covid cases was 0.005808057527426938 crimes per covid case.
+
+On 2020-07-13 the correlation between number of daily crimes and number of daily covid cases was 0.005501558774986246 crimes per covid case.
+
+On 2020-07-14 the correlation between number of daily crimes and number of daily covid cases was 0.006577745295084963 crimes per covid case.
+
+On 2020-07-15 the correlation between number of daily crimes and number of daily covid cases was 0.006892798839107564 crimes per covid case.
+
+On 2020-07-16 the correlation between number of daily crimes and number of daily covid cases was 0.0065005417118093175 crimes per covid case.
+
+On 2020-07-17 the correlation between number of daily crimes and number of daily covid cases was 0.005488079172289699 crimes per covid case.
+
+On 2020-07-18 the correlation between number of daily crimes and number of daily covid cases was 0.005717348579596212 crimes per covid case.
+
+On 2020-07-19 the correlation between number of daily crimes and number of daily covid cases was 0.006748956575792558 crimes per covid case.
+
+On 2020-07-20 the correlation between number of daily crimes and number of daily covid cases was 0.006173383896287151 crimes per covid case.
+
+On 2020-07-21 the correlation between number of daily crimes and number of daily covid cases was 0.00700096263236195 crimes per covid case.
+
+On 2020-07-22 the correlation between number of daily crimes and number of daily covid cases was 0.005117529707693642 crimes per covid case.
+
+On 2020-07-23 the correlation between number of daily crimes and number of daily covid cases was 0.0054446460980036296 crimes per covid case.
+
+On 2020-07-24 the correlation between number of daily crimes and number of daily covid cases was 0.006266632328955275 crimes per covid case.
+
+On 2020-07-25 the correlation between number of daily crimes and number of daily covid cases was 0.0054621490142527955 crimes per covid case.
+
+On 2020-07-26 the correlation between number of daily crimes and number of daily covid cases was 0.005602716468590832 crimes per covid case.
+
+On 2020-07-27 the correlation between number of daily crimes and number of daily covid cases was 0.006830831506156181 crimes per covid case.
+
+On 2020-07-28 the correlation between number of daily crimes and number of daily covid cases was 0.00887400586019255 crimes per covid case.
+
+On 2020-07-29 the correlation between number of daily crimes and number of daily covid cases was 0.007833986165513793 crimes per covid case.
+
+On 2020-07-30 the correlation between number of daily crimes and number of daily covid cases was 0.005805755992369578 crimes per covid case.
+
+On 2020-07-31 the correlation between number of daily crimes and number of daily covid cases was 0.004453240969816922 crimes per covid case.
+
+On 2020-08-01 the correlation between number of daily crimes and number of daily covid cases was 0.004916018025399427 crimes per covid case.
+
+On 2020-08-02 the correlation between number of daily crimes and number of daily covid cases was 0.006436369561675086 crimes per covid case.
+
+On 2020-08-03 the correlation between number of daily crimes and number of daily covid cases was 0.006740843011451312 crimes per covid case.
+
+On 2020-08-04 the correlation between number of daily crimes and number of daily covid cases was 0.006452653653815131 crimes per covid case.
+
+On 2020-08-05 the correlation between number of daily crimes and number of daily covid cases was 0.006831150044201559 crimes per covid case.
+
+On 2020-08-06 the correlation between number of daily crimes and number of daily covid cases was 0.006550567183256111 crimes per covid case.
+
+On 2020-08-07 the correlation between number of daily crimes and number of daily covid cases was 0.006354754150448804 crimes per covid case.
+
+On 2020-08-08 the correlation between number of daily crimes and number of daily covid cases was 0.0064016438789219945 crimes per covid case.
+
+On 2020-08-09 the correlation between number of daily crimes and number of daily covid cases was 0.007370814710264252 crimes per covid case.
+
+On 2020-08-10 the correlation between number of daily crimes and number of daily covid cases was 0.007339736081830249 crimes per covid case.
+
+On 2020-08-11 the correlation between number of daily crimes and number of daily covid cases was 0.005350496277915633 crimes per covid case.
+
+On 2020-08-12 the correlation between number of daily crimes and number of daily covid cases was 0.006096149394243383 crimes per covid case.
+
+On 2020-08-13 the correlation between number of daily crimes and number of daily covid cases was 0.0054514742014742015 crimes per covid case.
+
+On 2020-08-14 the correlation between number of daily crimes and number of daily covid cases was 0.0038115566397316663 crimes per covid case.
+
+On 2020-08-15 the correlation between number of daily crimes and number of daily covid cases was 0.005699521240215822 crimes per covid case.
+
+On 2020-08-16 the correlation between number of daily crimes and number of daily covid cases was 0.004992435703479577 crimes per covid case.
+
+On 2020-08-17 the correlation between number of daily crimes and number of daily covid cases was 0.005575227906275898 crimes per covid case.
+
+On 2020-08-18 the correlation between number of daily crimes and number of daily covid cases was 0.005853658536585366 crimes per covid case.
+
+On 2020-08-19 the correlation between number of daily crimes and number of daily covid cases was 0.006889321551595028 crimes per covid case.
+
+On 2020-08-20 the correlation between number of daily crimes and number of daily covid cases was 0.005742411812961444 crimes per covid case.
+
+On 2020-08-21 the correlation between number of daily crimes and number of daily covid cases was 0.00541985299576806 crimes per covid case.
+
+On 2020-08-22 the correlation between number of daily crimes and number of daily covid cases was 0.005024383035318457 crimes per covid case.
+
+On 2020-08-23 the correlation between number of daily crimes and number of daily covid cases was 0.006254598969830758 crimes per covid case.
+
+On 2020-08-24 the correlation between number of daily crimes and number of daily covid cases was 0.006745362563237774 crimes per covid case.
+
+On 2020-08-25 the correlation between number of daily crimes and number of daily covid cases was 0.005042385267465654 crimes per covid case.
+
+On 2020-08-26 the correlation between number of daily crimes and number of daily covid cases was 0.006267307972598747 crimes per covid case.
+
+On 2020-08-27 the correlation between number of daily crimes and number of daily covid cases was 0.007322024068435551 crimes per covid case.
+
+On 2020-08-28 the correlation between number of daily crimes and number of daily covid cases was 0.005270377590065699 crimes per covid case.
+
+On 2020-08-29 the correlation between number of daily crimes and number of daily covid cases was 0.0048114901256732494 crimes per covid case.
+
+On 2020-08-30 the correlation between number of daily crimes and number of daily covid cases was 0.006519091625474604 crimes per covid case.
+
+On 2020-08-31 the correlation between number of daily crimes and number of daily covid cases was 0.006074899942824471 crimes per covid case.
+
+On 2020-09-01 the correlation between number of daily crimes and number of daily covid cases was 0.00612143213040074 crimes per covid case.
+
+On 2020-09-02 the correlation between number of daily crimes and number of daily covid cases was 0.0051857640122185125 crimes per covid case.
+
+On 2020-09-03 the correlation between number of daily crimes and number of daily covid cases was 0.004386275203395826 crimes per covid case.
+
+On 2020-09-04 the correlation between number of daily crimes and number of daily covid cases was 0.00430001409840688 crimes per covid case.
+
+On 2020-09-05 the correlation between number of daily crimes and number of daily covid cases was 0.007093692934400899 crimes per covid case.
+
+On 2020-09-06 the correlation between number of daily crimes and number of daily covid cases was 0.005742699068562224 crimes per covid case.
+
+On 2020-09-07 the correlation between number of daily crimes and number of daily covid cases was 0.00544882989870765 crimes per covid case.
+
+On 2020-09-08 the correlation between number of daily crimes and number of daily covid cases was 0.007171703105417072 crimes per covid case.
+
+On 2020-09-09 the correlation between number of daily crimes and number of daily covid cases was 0.005004517967609648 crimes per covid case.
+
+On 2020-09-10 the correlation between number of daily crimes and number of daily covid cases was 0.005134610047182903 crimes per covid case.
+
+On 2020-09-11 the correlation between number of daily crimes and number of daily covid cases was 0.005657903815635134 crimes per covid case.
+
+On 2020-09-12 the correlation between number of daily crimes and number of daily covid cases was 0.006115997800989555 crimes per covid case.
+
+On 2020-09-13 the correlation between number of daily crimes and number of daily covid cases was 0.006510416666666667 crimes per covid case.
+
+On 2020-09-14 the correlation between number of daily crimes and number of daily covid cases was 0.004924086992203529 crimes per covid case.
+
+On 2020-09-15 the correlation between number of daily crimes and number of daily covid cases was 0.006264043031252128 crimes per covid case.
+
+On 2020-09-16 the correlation between number of daily crimes and number of daily covid cases was 0.00813945601302313 crimes per covid case.
+
+On 2020-09-17 the correlation between number of daily crimes and number of daily covid cases was 0.005476673427991886 crimes per covid case.
+
+On 2020-09-18 the correlation between number of daily crimes and number of daily covid cases was 0.005319148936170213 crimes per covid case.
+
+On 2020-09-19 the correlation between number of daily crimes and number of daily covid cases was 0.004697356059589317 crimes per covid case.
+
+On 2020-09-20 the correlation between number of daily crimes and number of daily covid cases was 0.004480106987629556 crimes per covid case.
+
+On 2020-09-21 the correlation between number of daily crimes and number of daily covid cases was 0.006676458806249165 crimes per covid case.
+
+On 2020-09-22 the correlation between number of daily crimes and number of daily covid cases was 0.007922242194261367 crimes per covid case.
+
+On 2020-09-23 the correlation between number of daily crimes and number of daily covid cases was 0.005913621262458472 crimes per covid case.
+
+On 2020-09-24 the correlation between number of daily crimes and number of daily covid cases was 0.005626903217264663 crimes per covid case.
+
+On 2020-09-25 the correlation between number of daily crimes and number of daily covid cases was 0.005935500890325134 crimes per covid case.
+
+On 2020-09-26 the correlation between number of daily crimes and number of daily covid cases was 0.004929346040092014 crimes per covid case.
+
+On 2020-09-27 the correlation between number of daily crimes and number of daily covid cases was 0.005377049180327869 crimes per covid case.
+
+On 2020-09-28 the correlation between number of daily crimes and number of daily covid cases was 0.0066823899371069185 crimes per covid case.
+
+On 2020-09-29 the correlation between number of daily crimes and number of daily covid cases was 0.0063398692810457515 crimes per covid case.
+
+On 2020-09-30 the correlation between number of daily crimes and number of daily covid cases was 0.00613336813258515 crimes per covid case.
+
+On 2020-10-01 the correlation between number of daily crimes and number of daily covid cases was 0.005143898945175153 crimes per covid case.
+
+On 2020-10-02 the correlation between number of daily crimes and number of daily covid cases was 0.0050573818323283405 crimes per covid case.
+
+On 2020-10-03 the correlation between number of daily crimes and number of daily covid cases was 0.005170296645770051 crimes per covid case.
+
+On 2020-10-04 the correlation between number of daily crimes and number of daily covid cases was 0.005026097042335202 crimes per covid case.
+
+On 2020-10-05 the correlation between number of daily crimes and number of daily covid cases was 0.005660255997941725 crimes per covid case.
+
+On 2020-10-06 the correlation between number of daily crimes and number of daily covid cases was 0.005047278303092257 crimes per covid case.
+
+On 2020-10-07 the correlation between number of daily crimes and number of daily covid cases was 0.005797286105625279 crimes per covid case.
+
+On 2020-10-08 the correlation between number of daily crimes and number of daily covid cases was 0.004313352362829052 crimes per covid case.
+
+On 2020-10-09 the correlation between number of daily crimes and number of daily covid cases was 0.004733951903048665 crimes per covid case.
+
+On 2020-10-10 the correlation between number of daily crimes and number of daily covid cases was 0.005842442517904259 crimes per covid case.
+
+On 2020-10-11 the correlation between number of daily crimes and number of daily covid cases was 0.006006006006006006 crimes per covid case.
+
+On 2020-10-12 the correlation between number of daily crimes and number of daily covid cases was 0.006615903133191861 crimes per covid case.
+
+On 2020-10-13 the correlation between number of daily crimes and number of daily covid cases was 0.0048543689320388345 crimes per covid case.
+
+On 2020-10-14 the correlation between number of daily crimes and number of daily covid cases was 0.005888916439375155 crimes per covid case.
+
+On 2020-10-15 the correlation between number of daily crimes and number of daily covid cases was 0.005196090560435482 crimes per covid case.
+
+On 2020-10-16 the correlation between number of daily crimes and number of daily covid cases was 0.003199015687480775 crimes per covid case.
+
+On 2020-10-17 the correlation between number of daily crimes and number of daily covid cases was 0.005265091220766499 crimes per covid case.
+
+On 2020-10-18 the correlation between number of daily crimes and number of daily covid cases was 0.0050702504581551615 crimes per covid case.
+
+On 2020-10-19 the correlation between number of daily crimes and number of daily covid cases was 0.005733455321744434 crimes per covid case.
+
+On 2020-10-20 the correlation between number of daily crimes and number of daily covid cases was 0.006324110671936759 crimes per covid case.
+
+On 2020-10-21 the correlation between number of daily crimes and number of daily covid cases was 0.005030912837919748 crimes per covid case.
+
+On 2020-10-22 the correlation between number of daily crimes and number of daily covid cases was 0.005321400495857774 crimes per covid case.
+
+On 2020-10-23 the correlation between number of daily crimes and number of daily covid cases was 0.005298332229514119 crimes per covid case.
+
+On 2020-10-24 the correlation between number of daily crimes and number of daily covid cases was 0.004249970070633305 crimes per covid case.
+
+On 2020-10-25 the correlation between number of daily crimes and number of daily covid cases was 0.003995944414623964 crimes per covid case.
+
+On 2020-10-26 the correlation between number of daily crimes and number of daily covid cases was 0.004877468474898882 crimes per covid case.
+
+On 2020-10-27 the correlation between number of daily crimes and number of daily covid cases was 0.004672897196261682 crimes per covid case.
+
+On 2020-10-28 the correlation between number of daily crimes and number of daily covid cases was 0.005125788016261121 crimes per covid case.
+
+On 2020-10-29 the correlation between number of daily crimes and number of daily covid cases was 0.004568349537308188 crimes per covid case.
+
+On 2020-10-30 the correlation between number of daily crimes and number of daily covid cases was 0.003966402239850677 crimes per covid case.
+
+On 2020-10-31 the correlation between number of daily crimes and number of daily covid cases was 0.005154639175257732 crimes per covid case.
+
+On 2020-11-01 the correlation between number of daily crimes and number of daily covid cases was 0.0037422994991076057 crimes per covid case.
+
+On 2020-11-02 the correlation between number of daily crimes and number of daily covid cases was 0.0039568757885078566 crimes per covid case.
+
+On 2020-11-03 the correlation between number of daily crimes and number of daily covid cases was 0.003994521798676101 crimes per covid case.
+
+On 2020-11-04 the correlation between number of daily crimes and number of daily covid cases was 0.005170160786318959 crimes per covid case.
+
+On 2020-11-05 the correlation between number of daily crimes and number of daily covid cases was 0.005259586019681031 crimes per covid case.
+
+On 2020-11-06 the correlation between number of daily crimes and number of daily covid cases was 0.004440197841726619 crimes per covid case.
+
+On 2020-11-07 the correlation between number of daily crimes and number of daily covid cases was 0.003689005645296518 crimes per covid case.
+
+On 2020-11-08 the correlation between number of daily crimes and number of daily covid cases was 0.004944169768346203 crimes per covid case.
+
+On 2020-11-09 the correlation between number of daily crimes and number of daily covid cases was 0.00552883286338254 crimes per covid case.
+
+On 2020-11-10 the correlation between number of daily crimes and number of daily covid cases was 0.005777802234083531 crimes per covid case.
+
+On 2020-11-11 the correlation between number of daily crimes and number of daily covid cases was 0.0038086947059143587 crimes per covid case.
+
+On 2020-11-12 the correlation between number of daily crimes and number of daily covid cases was 0.003674285405522235 crimes per covid case.
+
+On 2020-11-13 the correlation between number of daily crimes and number of daily covid cases was 0.004553734061930784 crimes per covid case.
+
+On 2020-11-14 the correlation between number of daily crimes and number of daily covid cases was 0.004358456468587222 crimes per covid case.
+
+On 2020-11-15 the correlation between number of daily crimes and number of daily covid cases was 0.0037940665015545132 crimes per covid case.
+
+On 2020-11-16 the correlation between number of daily crimes and number of daily covid cases was 0.0050881242131766685 crimes per covid case.
+
+On 2020-11-17 the correlation between number of daily crimes and number of daily covid cases was 0.0044020922885700964 crimes per covid case.
+
+On 2020-11-18 the correlation between number of daily crimes and number of daily covid cases was 0.004058566658104289 crimes per covid case.
+
+On 2020-11-19 the correlation between number of daily crimes and number of daily covid cases was 0.003912999288545584 crimes per covid case.
+
+On 2020-11-20 the correlation between number of daily crimes and number of daily covid cases was 0.004695072697899838 crimes per covid case.
+
+On 2020-11-21 the correlation between number of daily crimes and number of daily covid cases was 0.004308401382696257 crimes per covid case.
+
+On 2020-11-22 the correlation between number of daily crimes and number of daily covid cases was 0.00401965163019205 crimes per covid case.
+
+On 2020-11-23 the correlation between number of daily crimes and number of daily covid cases was 0.0034006899950714637 crimes per covid case.
+
+On 2020-11-24 the correlation between number of daily crimes and number of daily covid cases was 0.0034298593757655935 crimes per covid case.
+
+On 2020-11-25 the correlation between number of daily crimes and number of daily covid cases was 0.004386820042893352 crimes per covid case.
+
+On 2020-11-26 the correlation between number of daily crimes and number of daily covid cases was 0.002507716049382716 crimes per covid case.
+
+On 2020-11-27 the correlation between number of daily crimes and number of daily covid cases was 0.004728471127668721 crimes per covid case.
+
+On 2020-11-28 the correlation between number of daily crimes and number of daily covid cases was 0.003519804768162193 crimes per covid case.
+
+On 2020-11-29 the correlation between number of daily crimes and number of daily covid cases was 0.0035900783289817234 crimes per covid case.
+
+On 2020-11-30 the correlation between number of daily crimes and number of daily covid cases was 0.004315144766146993 crimes per covid case.
+
+On 2020-12-01 the correlation between number of daily crimes and number of daily covid cases was 0.0042886788102374914 crimes per covid case.
+
+On 2020-12-02 the correlation between number of daily crimes and number of daily covid cases was 0.0046241186704514235 crimes per covid case.
+
+On 2020-12-03 the correlation between number of daily crimes and number of daily covid cases was 0.003338747518498466 crimes per covid case.
+
+On 2020-12-04 the correlation between number of daily crimes and number of daily covid cases was 0.0030693950177935942 crimes per covid case.
+
+On 2020-12-05 the correlation between number of daily crimes and number of daily covid cases was 0.0030605106680657575 crimes per covid case.
+
+On 2020-12-06 the correlation between number of daily crimes and number of daily covid cases was 0.003414591977869986 crimes per covid case.
+
+On 2020-12-07 the correlation between number of daily crimes and number of daily covid cases was 0.00295896050430979 crimes per covid case.
+
+Correlation between Daily Number of Crimes and Daily Average Temp:
+
+On 2020-01-01, the correlation between daily number of crimes and daily average temperature was 1.4502401217250724crimes per degree of temperature (fahrenheit).
+
+On 2020-01-02, the correlation between daily number of crimes and daily average temperature was 2.0177464446335236crimes per degree of temperature (fahrenheit).
+
+On 2020-01-03, the correlation between daily number of crimes and daily average temperature was 1.7534056532881173crimes per degree of temperature (fahrenheit).
+
+On 2020-01-04, the correlation between daily number of crimes and daily average temperature was 1.4431140060064747crimes per degree of temperature (fahrenheit).
+
+On 2020-01-05, the correlation between daily number of crimes and daily average temperature was 1.944328222293323crimes per degree of temperature (fahrenheit).
+
+On 2020-01-06, the correlation between daily number of crimes and daily average temperature was 2.0072353833586183crimes per degree of temperature (fahrenheit).
+
+On 2020-01-07, the correlation between daily number of crimes and daily average temperature was 1.9530754597336717crimes per degree of temperature (fahrenheit).
+
+On 2020-01-08, the correlation between daily number of crimes and daily average temperature was 2.3200021090928264crimes per degree of temperature (fahrenheit).
+
+On 2020-01-09, the correlation between daily number of crimes and daily average temperature was 2.4232887490165225crimes per degree of temperature (fahrenheit).
+
+On 2020-01-10, the correlation between daily number of crimes and daily average temperature was 1.979878409641147crimes per degree of temperature (fahrenheit).
+
+On 2020-01-11, the correlation between daily number of crimes and daily average temperature was 1.2573246924599324crimes per degree of temperature (fahrenheit).
+
+On 2020-01-12, the correlation between daily number of crimes and daily average temperature was 1.7562654770895165crimes per degree of temperature (fahrenheit).
+
+On 2020-01-13, the correlation between daily number of crimes and daily average temperature was 2.075285608613463crimes per degree of temperature (fahrenheit).
+
+On 2020-01-14, the correlation between daily number of crimes and daily average temperature was 2.057189878625797crimes per degree of temperature (fahrenheit).
+
+On 2020-01-15, the correlation between daily number of crimes and daily average temperature was 1.8007790326684805crimes per degree of temperature (fahrenheit).
+
+On 2020-01-16, the correlation between daily number of crimes and daily average temperature was 2.5653396721542965crimes per degree of temperature (fahrenheit).
+
+On 2020-01-17, the correlation between daily number of crimes and daily average temperature was 2.83100713839972crimes per degree of temperature (fahrenheit).
+
+On 2020-01-18, the correlation between daily number of crimes and daily average temperature was 2.0316553873186263crimes per degree of temperature (fahrenheit).
+
+On 2020-01-19, the correlation between daily number of crimes and daily average temperature was 2.335633578524304crimes per degree of temperature (fahrenheit).
+
+On 2020-01-20, the correlation between daily number of crimes and daily average temperature was 3.8851790824733325crimes per degree of temperature (fahrenheit).
+
+On 2020-01-21, the correlation between daily number of crimes and daily average temperature was 3.0613286166196128crimes per degree of temperature (fahrenheit).
+
+On 2020-01-22, the correlation between daily number of crimes and daily average temperature was 3.062130630492697crimes per degree of temperature (fahrenheit).
+
+On 2020-01-23, the correlation between daily number of crimes and daily average temperature was 3.4024514383724016crimes per degree of temperature (fahrenheit).
+
+On 2020-01-24, the correlation between daily number of crimes and daily average temperature was 2.3932033026205577crimes per degree of temperature (fahrenheit).
+
+On 2020-01-25, the correlation between daily number of crimes and daily average temperature was 2.6182330227390236crimes per degree of temperature (fahrenheit).
+
+On 2020-01-26, the correlation between daily number of crimes and daily average temperature was 3.4250705516293203crimes per degree of temperature (fahrenheit).
+
+On 2020-01-27, the correlation between daily number of crimes and daily average temperature was 2.991463384974584crimes per degree of temperature (fahrenheit).
+
+On 2020-01-28, the correlation between daily number of crimes and daily average temperature was 2.7193394477268793crimes per degree of temperature (fahrenheit).
+
+On 2020-01-29, the correlation between daily number of crimes and daily average temperature was 2.9922508375744865crimes per degree of temperature (fahrenheit).
+
+On 2020-01-30, the correlation between daily number of crimes and daily average temperature was 2.523942398025716crimes per degree of temperature (fahrenheit).
+
+On 2020-01-31, the correlation between daily number of crimes and daily average temperature was 2.125425085017003crimes per degree of temperature (fahrenheit).
+
+On 2020-02-01, the correlation between daily number of crimes and daily average temperature was 1.7720860997566334crimes per degree of temperature (fahrenheit).
+
+On 2020-02-02, the correlation between daily number of crimes and daily average temperature was 1.543639988851489crimes per degree of temperature (fahrenheit).
+
+On 2020-02-03, the correlation between daily number of crimes and daily average temperature was 1.4882385383746684crimes per degree of temperature (fahrenheit).
+
+On 2020-02-04, the correlation between daily number of crimes and daily average temperature was 1.3298646031600907crimes per degree of temperature (fahrenheit).
+
+On 2020-02-05, the correlation between daily number of crimes and daily average temperature was 2.2960481933414605crimes per degree of temperature (fahrenheit).
+
+On 2020-02-06, the correlation between daily number of crimes and daily average temperature was 2.3010924710445866crimes per degree of temperature (fahrenheit).
+
+On 2020-02-07, the correlation between daily number of crimes and daily average temperature was 2.1537951764455276crimes per degree of temperature (fahrenheit).
+
+On 2020-02-08, the correlation between daily number of crimes and daily average temperature was 2.1941294281231265crimes per degree of temperature (fahrenheit).
+
+On 2020-02-09, the correlation between daily number of crimes and daily average temperature was 1.9581937432171002crimes per degree of temperature (fahrenheit).
+
+On 2020-02-10, the correlation between daily number of crimes and daily average temperature was 2.2664585516046953crimes per degree of temperature (fahrenheit).
+
+On 2020-02-11, the correlation between daily number of crimes and daily average temperature was 1.5674768646443535crimes per degree of temperature (fahrenheit).
+
+On 2020-02-12, the correlation between daily number of crimes and daily average temperature was 2.3375305973934326crimes per degree of temperature (fahrenheit).
+
+On 2020-02-13, the correlation between daily number of crimes and daily average temperature was 2.2856410475498783crimes per degree of temperature (fahrenheit).
+
+On 2020-02-14, the correlation between daily number of crimes and daily average temperature was 2.561861418367039crimes per degree of temperature (fahrenheit).
+
+On 2020-02-15, the correlation between daily number of crimes and daily average temperature was 2.8038144918086236crimes per degree of temperature (fahrenheit).
+
+On 2020-02-16, the correlation between daily number of crimes and daily average temperature was 1.6260534994503482crimes per degree of temperature (fahrenheit).
+
+On 2020-02-17, the correlation between daily number of crimes and daily average temperature was 1.9695785744104646crimes per degree of temperature (fahrenheit).
+
+On 2020-02-18, the correlation between daily number of crimes and daily average temperature was 1.7234036231094558crimes per degree of temperature (fahrenheit).
+
+On 2020-02-19, the correlation between daily number of crimes and daily average temperature was 2.047175010967009crimes per degree of temperature (fahrenheit).
+
+On 2020-02-20, the correlation between daily number of crimes and daily average temperature was 2.488582215120965crimes per degree of temperature (fahrenheit).
+
+On 2020-02-21, the correlation between daily number of crimes and daily average temperature was 2.521416854000851crimes per degree of temperature (fahrenheit).
+
+On 2020-02-22, the correlation between daily number of crimes and daily average temperature was 1.6660604709554037crimes per degree of temperature (fahrenheit).
+
+On 2020-02-23, the correlation between daily number of crimes and daily average temperature was 1.9787286668315607crimes per degree of temperature (fahrenheit).
+
+On 2020-02-24, the correlation between daily number of crimes and daily average temperature was 1.9268799756604633crimes per degree of temperature (fahrenheit).
+
+On 2020-02-26, the correlation between daily number of crimes and daily average temperature was 1.733513563711783crimes per degree of temperature (fahrenheit).
+
+On 2020-02-27, the correlation between daily number of crimes and daily average temperature was 2.448177990610834crimes per degree of temperature (fahrenheit).
+
+On 2020-02-28, the correlation between daily number of crimes and daily average temperature was 2.0234775277255332crimes per degree of temperature (fahrenheit).
+
+On 2020-02-29, the correlation between daily number of crimes and daily average temperature was 2.4938030496507175crimes per degree of temperature (fahrenheit).
+
+On 2020-03-01, the correlation between daily number of crimes and daily average temperature was 1.9623093030212384crimes per degree of temperature (fahrenheit).
+
+On 2020-03-02, the correlation between daily number of crimes and daily average temperature was 1.6260913752483022crimes per degree of temperature (fahrenheit).
+
+On 2020-03-03, the correlation between daily number of crimes and daily average temperature was 1.4046334897038564crimes per degree of temperature (fahrenheit).
+
+On 2020-03-04, the correlation between daily number of crimes and daily average temperature was 1.411956374168439crimes per degree of temperature (fahrenheit).
+
+On 2020-03-05, the correlation between daily number of crimes and daily average temperature was 1.645311889435041crimes per degree of temperature (fahrenheit).
+
+On 2020-03-06, the correlation between daily number of crimes and daily average temperature was 1.761256981298232crimes per degree of temperature (fahrenheit).
+
+On 2020-03-07, the correlation between daily number of crimes and daily average temperature was 1.88245840103087crimes per degree of temperature (fahrenheit).
+
+On 2020-03-08, the correlation between daily number of crimes and daily average temperature was 0.9829335748908654crimes per degree of temperature (fahrenheit).
+
+On 2020-03-09, the correlation between daily number of crimes and daily average temperature was 1.6092327698309494crimes per degree of temperature (fahrenheit).
+
+On 2020-03-10, the correlation between daily number of crimes and daily average temperature was 1.430743092193508crimes per degree of temperature (fahrenheit).
+
+On 2020-03-11, the correlation between daily number of crimes and daily average temperature was 1.7966154083919328crimes per degree of temperature (fahrenheit).
+
+On 2020-03-12, the correlation between daily number of crimes and daily average temperature was 1.3882091212458287crimes per degree of temperature (fahrenheit).
+
+On 2020-03-13, the correlation between daily number of crimes and daily average temperature was 1.2947777298230472crimes per degree of temperature (fahrenheit).
+
+On 2020-03-14, the correlation between daily number of crimes and daily average temperature was 2.1244369258610853crimes per degree of temperature (fahrenheit).
+
+On 2020-03-15, the correlation between daily number of crimes and daily average temperature was 1.7434915031694953crimes per degree of temperature (fahrenheit).
+
+On 2020-03-16, the correlation between daily number of crimes and daily average temperature was 1.700823114396103crimes per degree of temperature (fahrenheit).
+
+On 2020-03-17, the correlation between daily number of crimes and daily average temperature was 1.1487546041355166crimes per degree of temperature (fahrenheit).
+
+On 2020-03-18, the correlation between daily number of crimes and daily average temperature was 1.3726835964310227crimes per degree of temperature (fahrenheit).
+
+On 2020-03-19, the correlation between daily number of crimes and daily average temperature was 0.7202477652312395crimes per degree of temperature (fahrenheit).
+
+On 2020-03-20, the correlation between daily number of crimes and daily average temperature was 0.8736438827025673crimes per degree of temperature (fahrenheit).
+
+On 2020-03-21, the correlation between daily number of crimes and daily average temperature was 0.8291795833372594crimes per degree of temperature (fahrenheit).
+
+On 2020-03-22, the correlation between daily number of crimes and daily average temperature was 1.015195533139654crimes per degree of temperature (fahrenheit).
+
+On 2020-03-23, the correlation between daily number of crimes and daily average temperature was 1.2475494564248795crimes per degree of temperature (fahrenheit).
+
+On 2020-03-24, the correlation between daily number of crimes and daily average temperature was 1.2976926631209509crimes per degree of temperature (fahrenheit).
+
+On 2020-03-25, the correlation between daily number of crimes and daily average temperature was 1.3373526993696905crimes per degree of temperature (fahrenheit).
+
+On 2020-03-26, the correlation between daily number of crimes and daily average temperature was 1.1953253583677372crimes per degree of temperature (fahrenheit).
+
+On 2020-03-27, the correlation between daily number of crimes and daily average temperature was 0.8473449857114375crimes per degree of temperature (fahrenheit).
+
+On 2020-03-28, the correlation between daily number of crimes and daily average temperature was 0.692939127962759crimes per degree of temperature (fahrenheit).
+
+On 2020-03-29, the correlation between daily number of crimes and daily average temperature was 0.9283614420547733crimes per degree of temperature (fahrenheit).
+
+On 2020-03-30, the correlation between daily number of crimes and daily average temperature was 1.1376470491249187crimes per degree of temperature (fahrenheit).
+
+On 2020-03-31, the correlation between daily number of crimes and daily average temperature was 1.340693180270862crimes per degree of temperature (fahrenheit).
+
+On 2020-04-01, the correlation between daily number of crimes and daily average temperature was 0.9628779808243875crimes per degree of temperature (fahrenheit).
+
+On 2020-04-02, the correlation between daily number of crimes and daily average temperature was 0.7803206927725175crimes per degree of temperature (fahrenheit).
+
+On 2020-04-03, the correlation between daily number of crimes and daily average temperature was 0.7448723519344512crimes per degree of temperature (fahrenheit).
+
+On 2020-04-04, the correlation between daily number of crimes and daily average temperature was 0.986022222019337crimes per degree of temperature (fahrenheit).
+
+On 2020-04-05, the correlation between daily number of crimes and daily average temperature was 0.7268042088571004crimes per degree of temperature (fahrenheit).
+
+On 2020-04-06, the correlation between daily number of crimes and daily average temperature was 1.0282776349614395crimes per degree of temperature (fahrenheit).
+
+On 2020-04-07, the correlation between daily number of crimes and daily average temperature was 0.970394869845788crimes per degree of temperature (fahrenheit).
+
+On 2020-04-08, the correlation between daily number of crimes and daily average temperature was 0.7478145120884215crimes per degree of temperature (fahrenheit).
+
+On 2020-04-09, the correlation between daily number of crimes and daily average temperature was 0.8892437798304993crimes per degree of temperature (fahrenheit).
+
+On 2020-04-10, the correlation between daily number of crimes and daily average temperature was 1.0890992060466789crimes per degree of temperature (fahrenheit).
+
+On 2020-04-11, the correlation between daily number of crimes and daily average temperature was 0.9784459643808037crimes per degree of temperature (fahrenheit).
+
+On 2020-04-12, the correlation between daily number of crimes and daily average temperature was 0.7946869501050122crimes per degree of temperature (fahrenheit).
+
+On 2020-04-13, the correlation between daily number of crimes and daily average temperature was 0.7478419984884044crimes per degree of temperature (fahrenheit).
+
+On 2020-04-14, the correlation between daily number of crimes and daily average temperature was 1.3139688828278202crimes per degree of temperature (fahrenheit).
+
+On 2020-04-15, the correlation between daily number of crimes and daily average temperature was 1.0552753213313353crimes per degree of temperature (fahrenheit).
+
+On 2020-04-16, the correlation between daily number of crimes and daily average temperature was 1.2900087762892156crimes per degree of temperature (fahrenheit).
+
+On 2020-04-17, the correlation between daily number of crimes and daily average temperature was 0.9064696863036287crimes per degree of temperature (fahrenheit).
+
+On 2020-04-18, the correlation between daily number of crimes and daily average temperature was 0.5248178276578995crimes per degree of temperature (fahrenheit).
+
+On 2020-04-19, the correlation between daily number of crimes and daily average temperature was 1.0683665565655576crimes per degree of temperature (fahrenheit).
+
+On 2020-04-20, the correlation between daily number of crimes and daily average temperature was 0.8748829844008364crimes per degree of temperature (fahrenheit).
+
+On 2020-04-21, the correlation between daily number of crimes and daily average temperature was 1.0758572077795605crimes per degree of temperature (fahrenheit).
+
+On 2020-04-22, the correlation between daily number of crimes and daily average temperature was 1.5470415218304747crimes per degree of temperature (fahrenheit).
+
+On 2020-04-23, the correlation between daily number of crimes and daily average temperature was 1.3241821776269163crimes per degree of temperature (fahrenheit).
+
+On 2020-04-24, the correlation between daily number of crimes and daily average temperature was 1.2550640913243694crimes per degree of temperature (fahrenheit).
+
+On 2020-04-25, the correlation between daily number of crimes and daily average temperature was 0.9997054439316987crimes per degree of temperature (fahrenheit).
+
+On 2020-04-26, the correlation between daily number of crimes and daily average temperature was 0.6720931969233066crimes per degree of temperature (fahrenheit).
+
+On 2020-04-27, the correlation between daily number of crimes and daily average temperature was 1.2087772827856467crimes per degree of temperature (fahrenheit).
+
+On 2020-04-28, the correlation between daily number of crimes and daily average temperature was 1.5283628882139708crimes per degree of temperature (fahrenheit).
+
+On 2020-04-29, the correlation between daily number of crimes and daily average temperature was 0.9675784429666262crimes per degree of temperature (fahrenheit).
+
+On 2020-04-30, the correlation between daily number of crimes and daily average temperature was 0.9825391142160087crimes per degree of temperature (fahrenheit).
+
+On 2020-05-01, the correlation between daily number of crimes and daily average temperature was 0.9236374209990678crimes per degree of temperature (fahrenheit).
+
+On 2020-05-02, the correlation between daily number of crimes and daily average temperature was 0.605844065058332crimes per degree of temperature (fahrenheit).
+
+On 2020-05-03, the correlation between daily number of crimes and daily average temperature was 0.5593884020137981crimes per degree of temperature (fahrenheit).
+
+On 2020-05-04, the correlation between daily number of crimes and daily average temperature was 1.0797421321731397crimes per degree of temperature (fahrenheit).
+
+On 2020-05-05, the correlation between daily number of crimes and daily average temperature was 1.3148026407162896crimes per degree of temperature (fahrenheit).
+
+On 2020-05-06, the correlation between daily number of crimes and daily average temperature was 1.0976208586476155crimes per degree of temperature (fahrenheit).
+
+On 2020-05-07, the correlation between daily number of crimes and daily average temperature was 0.7753073232083939crimes per degree of temperature (fahrenheit).
+
+On 2020-05-08, the correlation between daily number of crimes and daily average temperature was 1.1718676167614872crimes per degree of temperature (fahrenheit).
+
+On 2020-05-09, the correlation between daily number of crimes and daily average temperature was 0.9470551095878056crimes per degree of temperature (fahrenheit).
+
+On 2020-05-10, the correlation between daily number of crimes and daily average temperature was 1.1556101260337293crimes per degree of temperature (fahrenheit).
+
+On 2020-05-11, the correlation between daily number of crimes and daily average temperature was 1.1097611143532293crimes per degree of temperature (fahrenheit).
+
+On 2020-05-12, the correlation between daily number of crimes and daily average temperature was 0.7649895980072954crimes per degree of temperature (fahrenheit).
+
+On 2020-05-13, the correlation between daily number of crimes and daily average temperature was 0.9336988905959545crimes per degree of temperature (fahrenheit).
+
+On 2020-05-14, the correlation between daily number of crimes and daily average temperature was 0.8218328423011318crimes per degree of temperature (fahrenheit).
+
+On 2020-05-15, the correlation between daily number of crimes and daily average temperature was 0.6931729008631964crimes per degree of temperature (fahrenheit).
+
+On 2020-05-16, the correlation between daily number of crimes and daily average temperature was 0.7509762691498949crimes per degree of temperature (fahrenheit).
+
+On 2020-05-17, the correlation between daily number of crimes and daily average temperature was 0.8122207991003094crimes per degree of temperature (fahrenheit).
+
+On 2020-05-18, the correlation between daily number of crimes and daily average temperature was 1.0882806789571997crimes per degree of temperature (fahrenheit).
+
+On 2020-05-19, the correlation between daily number of crimes and daily average temperature was 1.1247477587746866crimes per degree of temperature (fahrenheit).
+
+On 2020-05-20, the correlation between daily number of crimes and daily average temperature was 1.4858455929992485crimes per degree of temperature (fahrenheit).
+
+On 2020-05-21, the correlation between daily number of crimes and daily average temperature was 1.0736835357841095crimes per degree of temperature (fahrenheit).
+
+On 2020-05-22, the correlation between daily number of crimes and daily average temperature was 0.9209853080915138crimes per degree of temperature (fahrenheit).
+
+On 2020-05-23, the correlation between daily number of crimes and daily average temperature was 0.8214170813682069crimes per degree of temperature (fahrenheit).
+
+On 2020-05-24, the correlation between daily number of crimes and daily average temperature was 0.7315004318965317crimes per degree of temperature (fahrenheit).
+
+On 2020-05-25, the correlation between daily number of crimes and daily average temperature was 0.7297181284876233crimes per degree of temperature (fahrenheit).
+
+On 2020-05-26, the correlation between daily number of crimes and daily average temperature was 0.9629004235366355crimes per degree of temperature (fahrenheit).
+
+On 2020-05-27, the correlation between daily number of crimes and daily average temperature was 1.0572257312477975crimes per degree of temperature (fahrenheit).
+
+On 2020-05-28, the correlation between daily number of crimes and daily average temperature was 0.8796402665178719crimes per degree of temperature (fahrenheit).
+
+On 2020-05-29, the correlation between daily number of crimes and daily average temperature was 0.9160072262792295crimes per degree of temperature (fahrenheit).
+
+On 2020-05-30, the correlation between daily number of crimes and daily average temperature was 0.5639097744360902crimes per degree of temperature (fahrenheit).
+
+On 2020-05-31, the correlation between daily number of crimes and daily average temperature was 1.4989582240342962crimes per degree of temperature (fahrenheit).
+
+On 2020-06-01, the correlation between daily number of crimes and daily average temperature was 2.7374216241015445crimes per degree of temperature (fahrenheit).
+
+On 2020-06-02, the correlation between daily number of crimes and daily average temperature was 1.7006682208884574crimes per degree of temperature (fahrenheit).
+
+On 2020-06-03, the correlation between daily number of crimes and daily average temperature was 0.9535304767652385crimes per degree of temperature (fahrenheit).
+
+On 2020-06-04, the correlation between daily number of crimes and daily average temperature was 1.0941451079556506crimes per degree of temperature (fahrenheit).
+
+On 2020-06-05, the correlation between daily number of crimes and daily average temperature was 0.8226650550869178crimes per degree of temperature (fahrenheit).
+
+On 2020-06-06, the correlation between daily number of crimes and daily average temperature was 0.6193446095341909crimes per degree of temperature (fahrenheit).
+
+On 2020-06-07, the correlation between daily number of crimes and daily average temperature was 0.9324513334729757crimes per degree of temperature (fahrenheit).
+
+On 2020-06-08, the correlation between daily number of crimes and daily average temperature was 1.1491611123879568crimes per degree of temperature (fahrenheit).
+
+On 2020-06-09, the correlation between daily number of crimes and daily average temperature was 1.0071557796442627crimes per degree of temperature (fahrenheit).
+
+On 2020-06-10, the correlation between daily number of crimes and daily average temperature was 1.0739920882582832crimes per degree of temperature (fahrenheit).
+
+On 2020-06-11, the correlation between daily number of crimes and daily average temperature was 1.0551070997266891crimes per degree of temperature (fahrenheit).
+
+On 2020-06-12, the correlation between daily number of crimes and daily average temperature was 0.7760912165876562crimes per degree of temperature (fahrenheit).
+
+On 2020-06-13, the correlation between daily number of crimes and daily average temperature was 0.7262113414659693crimes per degree of temperature (fahrenheit).
+
+On 2020-06-14, the correlation between daily number of crimes and daily average temperature was 1.150061456409077crimes per degree of temperature (fahrenheit).
+
+On 2020-06-15, the correlation between daily number of crimes and daily average temperature was 1.1178388448998602crimes per degree of temperature (fahrenheit).
+
+On 2020-06-16, the correlation between daily number of crimes and daily average temperature was 1.217058869853452crimes per degree of temperature (fahrenheit).
+
+On 2020-06-17, the correlation between daily number of crimes and daily average temperature was 0.8364087250636476crimes per degree of temperature (fahrenheit).
+
+On 2020-06-18, the correlation between daily number of crimes and daily average temperature was 0.7429420505200595crimes per degree of temperature (fahrenheit).
+
+On 2020-06-19, the correlation between daily number of crimes and daily average temperature was 0.5955177365032522crimes per degree of temperature (fahrenheit).
+
+On 2020-06-20, the correlation between daily number of crimes and daily average temperature was 0.7813570938999316crimes per degree of temperature (fahrenheit).
+
+On 2020-06-21, the correlation between daily number of crimes and daily average temperature was 0.8573432750513107crimes per degree of temperature (fahrenheit).
+
+On 2020-06-22, the correlation between daily number of crimes and daily average temperature was 0.8918477578193694crimes per degree of temperature (fahrenheit).
+
+On 2020-06-23, the correlation between daily number of crimes and daily average temperature was 1.0028910501259805crimes per degree of temperature (fahrenheit).
+
+On 2020-06-24, the correlation between daily number of crimes and daily average temperature was 0.9181119593515363crimes per degree of temperature (fahrenheit).
+
+On 2020-06-25, the correlation between daily number of crimes and daily average temperature was 1.0021670234988642crimes per degree of temperature (fahrenheit).
+
+On 2020-06-26, the correlation between daily number of crimes and daily average temperature was 0.5928243032737777crimes per degree of temperature (fahrenheit).
+
+On 2020-06-27, the correlation between daily number of crimes and daily average temperature was 0.6936416184971097crimes per degree of temperature (fahrenheit).
+
+On 2020-06-28, the correlation between daily number of crimes and daily average temperature was 0.9209064174898548crimes per degree of temperature (fahrenheit).
+
+On 2020-06-29, the correlation between daily number of crimes and daily average temperature was 0.878724044538068crimes per degree of temperature (fahrenheit).
+
+On 2020-06-30, the correlation between daily number of crimes and daily average temperature was 1.025691120445443crimes per degree of temperature (fahrenheit).
+
+On 2020-07-01, the correlation between daily number of crimes and daily average temperature was 0.7065042547957131crimes per degree of temperature (fahrenheit).
+
+On 2020-07-02, the correlation between daily number of crimes and daily average temperature was 0.6690102297746043crimes per degree of temperature (fahrenheit).
+
+On 2020-07-03, the correlation between daily number of crimes and daily average temperature was 0.6518790997084004crimes per degree of temperature (fahrenheit).
+
+On 2020-07-04, the correlation between daily number of crimes and daily average temperature was 0.7447402718301992crimes per degree of temperature (fahrenheit).
+
+On 2020-07-05, the correlation between daily number of crimes and daily average temperature was 0.634438013610491crimes per degree of temperature (fahrenheit).
+
+On 2020-07-06, the correlation between daily number of crimes and daily average temperature was 0.8803850217161638crimes per degree of temperature (fahrenheit).
+
+On 2020-07-07, the correlation between daily number of crimes and daily average temperature was 0.8498635907352551crimes per degree of temperature (fahrenheit).
+
+On 2020-07-08, the correlation between daily number of crimes and daily average temperature was 1.035770203540889crimes per degree of temperature (fahrenheit).
+
+On 2020-07-09, the correlation between daily number of crimes and daily average temperature was 0.7037681933178423crimes per degree of temperature (fahrenheit).
+
+On 2020-07-10, the correlation between daily number of crimes and daily average temperature was 0.7502964881283731crimes per degree of temperature (fahrenheit).
+
+On 2020-07-11, the correlation between daily number of crimes and daily average temperature was 0.7260933756081032crimes per degree of temperature (fahrenheit).
+
+On 2020-07-12, the correlation between daily number of crimes and daily average temperature was 0.77937501546379crimes per degree of temperature (fahrenheit).
+
+On 2020-07-13, the correlation between daily number of crimes and daily average temperature was 0.7376625931299023crimes per degree of temperature (fahrenheit).
+
+On 2020-07-14, the correlation between daily number of crimes and daily average temperature was 0.8863720300381633crimes per degree of temperature (fahrenheit).
+
+On 2020-07-15, the correlation between daily number of crimes and daily average temperature was 0.9295896962321036crimes per degree of temperature (fahrenheit).
+
+On 2020-07-16, the correlation between daily number of crimes and daily average temperature was 0.8867650318989088crimes per degree of temperature (fahrenheit).
+
+On 2020-07-17, the correlation between daily number of crimes and daily average temperature was 0.7074145159139273crimes per degree of temperature (fahrenheit).
+
+On 2020-07-18, the correlation between daily number of crimes and daily average temperature was 0.7278848122284649crimes per degree of temperature (fahrenheit).
+
+On 2020-07-19, the correlation between daily number of crimes and daily average temperature was 0.8575168118427585crimes per degree of temperature (fahrenheit).
+
+On 2020-07-20, the correlation between daily number of crimes and daily average temperature was 0.7869014630746488crimes per degree of temperature (fahrenheit).
+
+On 2020-07-21, the correlation between daily number of crimes and daily average temperature was 0.9112551400485244crimes per degree of temperature (fahrenheit).
+
+On 2020-07-22, the correlation between daily number of crimes and daily average temperature was 0.7391908991818785crimes per degree of temperature (fahrenheit).
+
+On 2020-07-23, the correlation between daily number of crimes and daily average temperature was 0.7482985117174045crimes per degree of temperature (fahrenheit).
+
+On 2020-07-24, the correlation between daily number of crimes and daily average temperature was 0.9165557592346133crimes per degree of temperature (fahrenheit).
+
+On 2020-07-25, the correlation between daily number of crimes and daily average temperature was 0.7693463561232157crimes per degree of temperature (fahrenheit).
+
+On 2020-07-26, the correlation between daily number of crimes and daily average temperature was 0.7616629641383688crimes per degree of temperature (fahrenheit).
+
+On 2020-07-27, the correlation between daily number of crimes and daily average temperature was 0.9229296750376007crimes per degree of temperature (fahrenheit).
+
+On 2020-07-28, the correlation between daily number of crimes and daily average temperature was 1.2516826866306119crimes per degree of temperature (fahrenheit).
+
+On 2020-07-29, the correlation between daily number of crimes and daily average temperature was 1.1032993344992312crimes per degree of temperature (fahrenheit).
+
+On 2020-07-30, the correlation between daily number of crimes and daily average temperature was 0.823171090231311crimes per degree of temperature (fahrenheit).
+
+On 2020-07-31, the correlation between daily number of crimes and daily average temperature was 0.7026949653207022crimes per degree of temperature (fahrenheit).
+
+On 2020-08-01, the correlation between daily number of crimes and daily average temperature was 0.7372954773066596crimes per degree of temperature (fahrenheit).
+
+On 2020-08-02, the correlation between daily number of crimes and daily average temperature was 0.931719139751974crimes per degree of temperature (fahrenheit).
+
+On 2020-08-03, the correlation between daily number of crimes and daily average temperature was 1.052938713892448crimes per degree of temperature (fahrenheit).
+
+On 2020-08-04, the correlation between daily number of crimes and daily average temperature was 1.0088335992030215crimes per degree of temperature (fahrenheit).
+
+On 2020-08-05, the correlation between daily number of crimes and daily average temperature was 1.0573059843518715crimes per degree of temperature (fahrenheit).
+
+On 2020-08-06, the correlation between daily number of crimes and daily average temperature was 1.032238572993114crimes per degree of temperature (fahrenheit).
+
+On 2020-08-07, the correlation between daily number of crimes and daily average temperature was 0.9966736018538129crimes per degree of temperature (fahrenheit).
+
+On 2020-08-08, the correlation between daily number of crimes and daily average temperature was 1.0150503139137084crimes per degree of temperature (fahrenheit).
+
+On 2020-08-09, the correlation between daily number of crimes and daily average temperature was 1.153565314499948crimes per degree of temperature (fahrenheit).
+
+On 2020-08-10, the correlation between daily number of crimes and daily average temperature was 1.1106909915871064crimes per degree of temperature (fahrenheit).
+
+On 2020-08-11, the correlation between daily number of crimes and daily average temperature was 0.8191709752289821crimes per degree of temperature (fahrenheit).
+
+On 2020-08-12, the correlation between daily number of crimes and daily average temperature was 0.9511024963430712crimes per degree of temperature (fahrenheit).
+
+On 2020-08-13, the correlation between daily number of crimes and daily average temperature was 0.9000386636327334crimes per degree of temperature (fahrenheit).
+
+On 2020-08-14, the correlation between daily number of crimes and daily average temperature was 0.620693935820247crimes per degree of temperature (fahrenheit).
+
+On 2020-08-15, the correlation between daily number of crimes and daily average temperature was 0.9988945566905958crimes per degree of temperature (fahrenheit).
+
+On 2020-08-16, the correlation between daily number of crimes and daily average temperature was 0.9275590440520276crimes per degree of temperature (fahrenheit).
+
+On 2020-08-17, the correlation between daily number of crimes and daily average temperature was 0.9884788779428951crimes per degree of temperature (fahrenheit).
+
+On 2020-08-18, the correlation between daily number of crimes and daily average temperature was 0.9950185290309412crimes per degree of temperature (fahrenheit).
+
+On 2020-08-19, the correlation between daily number of crimes and daily average temperature was 1.219245525567711crimes per degree of temperature (fahrenheit).
+
+On 2020-08-20, the correlation between daily number of crimes and daily average temperature was 1.0174821940616041crimes per degree of temperature (fahrenheit).
+
+On 2020-08-21, the correlation between daily number of crimes and daily average temperature was 0.9413403138660716crimes per degree of temperature (fahrenheit).
+
+On 2020-08-22, the correlation between daily number of crimes and daily average temperature was 0.8593616712056971crimes per degree of temperature (fahrenheit).
+
+On 2020-08-23, the correlation between daily number of crimes and daily average temperature was 1.022839402180453crimes per degree of temperature (fahrenheit).
+
+On 2020-08-24, the correlation between daily number of crimes and daily average temperature was 1.1161391291688405crimes per degree of temperature (fahrenheit).
+
+On 2020-08-25, the correlation between daily number of crimes and daily average temperature was 0.8280182164007608crimes per degree of temperature (fahrenheit).
+
+On 2020-08-26, the correlation between daily number of crimes and daily average temperature was 1.0778900928113504crimes per degree of temperature (fahrenheit).
+
+On 2020-08-27, the correlation between daily number of crimes and daily average temperature was 1.190616527171991crimes per degree of temperature (fahrenheit).
+
+On 2020-08-28, the correlation between daily number of crimes and daily average temperature was 0.8750269700093496crimes per degree of temperature (fahrenheit).
+
+On 2020-08-29, the correlation between daily number of crimes and daily average temperature was 0.8600770218228497crimes per degree of temperature (fahrenheit).
+
+On 2020-08-30, the correlation between daily number of crimes and daily average temperature was 1.1990565664817572crimes per degree of temperature (fahrenheit).
+
+On 2020-08-31, the correlation between daily number of crimes and daily average temperature was 1.1908180920292242crimes per degree of temperature (fahrenheit).
+
+On 2020-09-01, the correlation between daily number of crimes and daily average temperature was 1.1429330852548343crimes per degree of temperature (fahrenheit).
+
+On 2020-09-02, the correlation between daily number of crimes and daily average temperature was 0.8988819386297591crimes per degree of temperature (fahrenheit).
+
+On 2020-09-03, the correlation between daily number of crimes and daily average temperature was 0.7455866083024676crimes per degree of temperature (fahrenheit).
+
+On 2020-09-04, the correlation between daily number of crimes and daily average temperature was 0.7649382406420465crimes per degree of temperature (fahrenheit).
+
+On 2020-09-05, the correlation between daily number of crimes and daily average temperature was 1.3758530970316993crimes per degree of temperature (fahrenheit).
+
+On 2020-09-06, the correlation between daily number of crimes and daily average temperature was 1.0960661917046501crimes per degree of temperature (fahrenheit).
+
+On 2020-09-07, the correlation between daily number of crimes and daily average temperature was 1.0446731713197035crimes per degree of temperature (fahrenheit).
+
+On 2020-09-08, the correlation between daily number of crimes and daily average temperature was 1.3406396022335314crimes per degree of temperature (fahrenheit).
+
+On 2020-09-09, the correlation between daily number of crimes and daily average temperature was 0.9525447497585565crimes per degree of temperature (fahrenheit).
+
+On 2020-09-10, the correlation between daily number of crimes and daily average temperature was 0.9405364870962207crimes per degree of temperature (fahrenheit).
+
+On 2020-09-11, the correlation between daily number of crimes and daily average temperature was 1.0544589468269787crimes per degree of temperature (fahrenheit).
+
+On 2020-09-12, the correlation between daily number of crimes and daily average temperature was 1.2353304508956144crimes per degree of temperature (fahrenheit).
+
+On 2020-09-13, the correlation between daily number of crimes and daily average temperature was 1.3155708192544175crimes per degree of temperature (fahrenheit).
+
+On 2020-09-14, the correlation between daily number of crimes and daily average temperature was 0.9811670436891881crimes per degree of temperature (fahrenheit).
+
+On 2020-09-15, the correlation between daily number of crimes and daily average temperature was 1.4336805853156824crimes per degree of temperature (fahrenheit).
+
+On 2020-09-16, the correlation between daily number of crimes and daily average temperature was 1.833502677677869crimes per degree of temperature (fahrenheit).
+
+On 2020-09-17, the correlation between daily number of crimes and daily average temperature was 1.161132175545983crimes per degree of temperature (fahrenheit).
+
+On 2020-09-18, the correlation between daily number of crimes and daily average temperature was 1.1504966067631726crimes per degree of temperature (fahrenheit).
+
+On 2020-09-19, the correlation between daily number of crimes and daily average temperature was 1.1984146685955437crimes per degree of temperature (fahrenheit).
+
+On 2020-09-20, the correlation between daily number of crimes and daily average temperature was 1.1410761881242921crimes per degree of temperature (fahrenheit).
+
+On 2020-09-21, the correlation between daily number of crimes and daily average temperature was 1.698023500645249crimes per degree of temperature (fahrenheit).
+
+On 2020-09-22, the correlation between daily number of crimes and daily average temperature was 1.973155141395634crimes per degree of temperature (fahrenheit).
+
+On 2020-09-23, the correlation between daily number of crimes and daily average temperature was 1.3022738579497235crimes per degree of temperature (fahrenheit).
+
+On 2020-09-24, the correlation between daily number of crimes and daily average temperature was 1.212216287908499crimes per degree of temperature (fahrenheit).
+
+On 2020-09-25, the correlation between daily number of crimes and daily average temperature was 1.352803685638486crimes per degree of temperature (fahrenheit).
+
+On 2020-09-26, the correlation between daily number of crimes and daily average temperature was 1.1021388841945938crimes per degree of temperature (fahrenheit).
+
+On 2020-09-27, the correlation between daily number of crimes and daily average temperature was 1.152567625499856crimes per degree of temperature (fahrenheit).
+
+On 2020-09-28, the correlation between daily number of crimes and daily average temperature was 1.3927196264234414crimes per degree of temperature (fahrenheit).
+
+On 2020-09-29, the correlation between daily number of crimes and daily average temperature was 1.3806060433538763crimes per degree of temperature (fahrenheit).
+
+On 2020-09-30, the correlation between daily number of crimes and daily average temperature was 1.4813647466708693crimes per degree of temperature (fahrenheit).
+
+On 2020-10-01, the correlation between daily number of crimes and daily average temperature was 1.2025085241110571crimes per degree of temperature (fahrenheit).
+
+On 2020-10-02, the correlation between daily number of crimes and daily average temperature was 1.265658466930616crimes per degree of temperature (fahrenheit).
+
+On 2020-10-03, the correlation between daily number of crimes and daily average temperature was 1.3800360534418963crimes per degree of temperature (fahrenheit).
+
+On 2020-10-04, the correlation between daily number of crimes and daily average temperature was 1.3331168442731522crimes per degree of temperature (fahrenheit).
+
+On 2020-10-05, the correlation between daily number of crimes and daily average temperature was 1.4214870693136479crimes per degree of temperature (fahrenheit).
+
+On 2020-10-06, the correlation between daily number of crimes and daily average temperature was 1.3008826241601894crimes per degree of temperature (fahrenheit).
+
+On 2020-10-07, the correlation between daily number of crimes and daily average temperature was 1.3345260965844932crimes per degree of temperature (fahrenheit).
+
+On 2020-10-08, the correlation between daily number of crimes and daily average temperature was 1.066407383302883crimes per degree of temperature (fahrenheit).
+
+On 2020-10-09, the correlation between daily number of crimes and daily average temperature was 1.2198295491509985crimes per degree of temperature (fahrenheit).
+
+On 2020-10-10, the correlation between daily number of crimes and daily average temperature was 1.4172616371657818crimes per degree of temperature (fahrenheit).
+
+On 2020-10-11, the correlation between daily number of crimes and daily average temperature was 1.4247762656020424crimes per degree of temperature (fahrenheit).
+
+On 2020-10-12, the correlation between daily number of crimes and daily average temperature was 1.7227648750995466crimes per degree of temperature (fahrenheit).
+
+On 2020-10-13, the correlation between daily number of crimes and daily average temperature was 1.2297408084757522crimes per degree of temperature (fahrenheit).
+
+On 2020-10-14, the correlation between daily number of crimes and daily average temperature was 1.5280067553982868crimes per degree of temperature (fahrenheit).
+
+On 2020-10-15, the correlation between daily number of crimes and daily average temperature was 1.2801950773451194crimes per degree of temperature (fahrenheit).
+
+On 2020-10-16, the correlation between daily number of crimes and daily average temperature was 0.8695506764100935crimes per degree of temperature (fahrenheit).
+
+On 2020-10-17, the correlation between daily number of crimes and daily average temperature was 1.6000446524089043crimes per degree of temperature (fahrenheit).
+
+On 2020-10-18, the correlation between daily number of crimes and daily average temperature was 1.5065161360583728crimes per degree of temperature (fahrenheit).
+
+On 2020-10-19, the correlation between daily number of crimes and daily average temperature was 1.514553408147975crimes per degree of temperature (fahrenheit).
+
+On 2020-10-20, the correlation between daily number of crimes and daily average temperature was 1.5793709851326518crimes per degree of temperature (fahrenheit).
+
+On 2020-10-21, the correlation between daily number of crimes and daily average temperature was 1.1886519541151703crimes per degree of temperature (fahrenheit).
+
+On 2020-10-22, the correlation between daily number of crimes and daily average temperature was 1.2344813074279302crimes per degree of temperature (fahrenheit).
+
+On 2020-10-23, the correlation between daily number of crimes and daily average temperature was 1.2728074806366931crimes per degree of temperature (fahrenheit).
+
+On 2020-10-24, the correlation between daily number of crimes and daily average temperature was 1.0464722095302665crimes per degree of temperature (fahrenheit).
+
+On 2020-10-25, the correlation between daily number of crimes and daily average temperature was 1.3090156007307043crimes per degree of temperature (fahrenheit).
+
+On 2020-10-26, the correlation between daily number of crimes and daily average temperature was 1.4187219391506698crimes per degree of temperature (fahrenheit).
+
+On 2020-10-27, the correlation between daily number of crimes and daily average temperature was 1.2877145511744281crimes per degree of temperature (fahrenheit).
+
+On 2020-10-28, the correlation between daily number of crimes and daily average temperature was 1.3225602943076702crimes per degree of temperature (fahrenheit).
+
+On 2020-10-29, the correlation between daily number of crimes and daily average temperature was 1.2926534197311943crimes per degree of temperature (fahrenheit).
+
+On 2020-10-30, the correlation between daily number of crimes and daily average temperature was 1.341408083956365crimes per degree of temperature (fahrenheit).
+
+On 2020-10-31, the correlation between daily number of crimes and daily average temperature was 1.947760622408001crimes per degree of temperature (fahrenheit).
+
+On 2020-11-01, the correlation between daily number of crimes and daily average temperature was 1.3065851893543459crimes per degree of temperature (fahrenheit).
+
+On 2020-11-02, the correlation between daily number of crimes and daily average temperature was 1.6220409506570441crimes per degree of temperature (fahrenheit).
+
+On 2020-11-03, the correlation between daily number of crimes and daily average temperature was 1.3652276517109228crimes per degree of temperature (fahrenheit).
+
+On 2020-11-04, the correlation between daily number of crimes and daily average temperature was 1.6829257016043273crimes per degree of temperature (fahrenheit).
+
+On 2020-11-05, the correlation between daily number of crimes and daily average temperature was 1.622300526811569crimes per degree of temperature (fahrenheit).
+
+On 2020-11-06, the correlation between daily number of crimes and daily average temperature was 1.3152089767174713crimes per degree of temperature (fahrenheit).
+
+On 2020-11-07, the correlation between daily number of crimes and daily average temperature was 1.0721944245889923crimes per degree of temperature (fahrenheit).
+
+On 2020-11-08, the correlation between daily number of crimes and daily average temperature was 1.4234647772437563crimes per degree of temperature (fahrenheit).
+
+On 2020-11-09, the correlation between daily number of crimes and daily average temperature was 1.5628418716594255crimes per degree of temperature (fahrenheit).
+
+On 2020-11-10, the correlation between daily number of crimes and daily average temperature was 1.6006829580621067crimes per degree of temperature (fahrenheit).
+
+On 2020-11-11, the correlation between daily number of crimes and daily average temperature was 1.0432890432294266crimes per degree of temperature (fahrenheit).
+
+On 2020-11-12, the correlation between daily number of crimes and daily average temperature was 1.1336072884280368crimes per degree of temperature (fahrenheit).
+
+On 2020-11-13, the correlation between daily number of crimes and daily average temperature was 1.5686998246747255crimes per degree of temperature (fahrenheit).
+
+On 2020-11-14, the correlation between daily number of crimes and daily average temperature was 1.5967441996319698crimes per degree of temperature (fahrenheit).
+
+On 2020-11-15, the correlation between daily number of crimes and daily average temperature was 1.2747875354107647crimes per degree of temperature (fahrenheit).
+
+On 2020-11-16, the correlation between daily number of crimes and daily average temperature was 1.8558200045917195crimes per degree of temperature (fahrenheit).
+
+On 2020-11-17, the correlation between daily number of crimes and daily average temperature was 1.8585734901823587crimes per degree of temperature (fahrenheit).
+
+On 2020-11-18, the correlation between daily number of crimes and daily average temperature was 2.0109200595639614crimes per degree of temperature (fahrenheit).
+
+On 2020-11-19, the correlation between daily number of crimes and daily average temperature was 1.8365253893672333crimes per degree of temperature (fahrenheit).
+
+On 2020-11-20, the correlation between daily number of crimes and daily average temperature was 1.8024129076021125crimes per degree of temperature (fahrenheit).
+
+On 2020-11-21, the correlation between daily number of crimes and daily average temperature was 1.5128992250789433crimes per degree of temperature (fahrenheit).
+
+On 2020-11-22, the correlation between daily number of crimes and daily average temperature was 1.4898058654208701crimes per degree of temperature (fahrenheit).
+
+On 2020-11-23, the correlation between daily number of crimes and daily average temperature was 1.3813675538783396crimes per degree of temperature (fahrenheit).
+
+On 2020-11-24, the correlation between daily number of crimes and daily average temperature was 1.5649277338728607crimes per degree of temperature (fahrenheit).
+
+On 2020-11-25, the correlation between daily number of crimes and daily average temperature was 1.7839444995044598crimes per degree of temperature (fahrenheit).
+
+On 2020-11-26, the correlation between daily number of crimes and daily average temperature was 0.8545042232227954crimes per degree of temperature (fahrenheit).
+
+On 2020-11-27, the correlation between daily number of crimes and daily average temperature was 1.7440785011495064crimes per degree of temperature (fahrenheit).
+
+On 2020-11-28, the correlation between daily number of crimes and daily average temperature was 1.4660893532591168crimes per degree of temperature (fahrenheit).
+
+On 2020-11-29, the correlation between daily number of crimes and daily average temperature was 1.6084726820759743crimes per degree of temperature (fahrenheit).
+
+On 2020-11-30, the correlation between daily number of crimes and daily average temperature was 1.6471255003365095crimes per degree of temperature (fahrenheit).
+
+On 2020-12-01, the correlation between daily number of crimes and daily average temperature was 2.1435980177480696crimes per degree of temperature (fahrenheit).
+
+On 2020-12-02, the correlation between daily number of crimes and daily average temperature was 2.4321818597762874crimes per degree of temperature (fahrenheit).
+
+On 2020-12-03, the correlation between daily number of crimes and daily average temperature was 1.7304274623515108crimes per degree of temperature (fahrenheit).
+
+On 2020-12-04, the correlation between daily number of crimes and daily average temperature was 1.3935452599264855crimes per degree of temperature (fahrenheit).
+

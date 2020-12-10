@@ -91,6 +91,7 @@ def getCrimeTotals(cur,conn,covid_dates_list):
 
 #adds daily number of crimes to CrimeTotals table
 def addCrimeTotals(cur,conn,data):
+        
         dates_list = []
         crime_totals_list = []
         
@@ -126,7 +127,7 @@ def addCrimeTotals(cur,conn,data):
       
 #creates CrimesCovidCorrelation Table
 def setUpCrimesCovidCorrelationTable(cur,conn):
-        cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovidCorrelation (Date INTEGER, Cases INTEGER, Crimes INTEGER, Crimes_Per_Case INTEGER)")
+        cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovidCorrelation (Date INTEGER, Crimes_Per_Case INTEGER)")
         conn.commit()
 
 
@@ -154,25 +155,35 @@ def addDataCrimeAndCovid(cur,conn,data):
         entries = cur.fetchall()
         if len(entries) == 0:
                 for i in range(25):
-                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date, Crimes_Per_Case) Values (?,?)",(data[i][0],corr_dict[data[i][0]],))
                         conn.commit()
         elif len(entries) == 25:
                 for i in range(25,50):
-                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date, Crimes_Per_Case) Values (?,?)",(data[i][0],corr_dict[data[i][0]],))
                         conn.commit()
         elif len(entries) == 50:
                 for i in range(50,75):
-                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date, Crimes_Per_Case) Values (?,?)",(data[i][0],corr_dict[data[i][0]],))
                         conn.commit()
         elif len(entries) == 75:
                 for i in range(75,100):
-                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date, Crimes_Per_Case) Values (?,?)",(data[i][0],corr_dict[data[i][0]],))
                         conn.commit()
         elif len(entries) == 100:
                 for i in range(100,len(corr_dict)):
-                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date, Crimes_Per_Case) Values (?,?)",(data[i][0],corr_dict[data[i][0]],))
                         conn.commit()
 
+#writes calculations made to text file
+def writecalc(corr_dict):
+        f = open("calculations.txt", 'w')
+        f.write("Correlation between daily crimes and daily covid cases:\n\n")
+
+        for date in corr_dict:
+                formatted_date= str(date)
+                formatted_date= formatted_date[0:4] + "-" + formatted_date[4:6] + "-" + formatted_date[6:]
+                f.write("On " + formatted_date + ", the correlation between number of daily crimes and number of daily covid cases was " + str(corr_dict[date]) + " crimes per covid case.\n\n")
+        f.close()
 
 def main():
         path = os.path.dirname(os.path.abspath(__file__))
@@ -182,17 +193,25 @@ def main():
         setUpCrimeTotalsTable(cur,conn)
         data = getCrimesData(cur,conn)
         addData(cur,conn,data)
-        dates = getCrimeDatesList("covid_data.db","Crimes")
-        crime_list = getCrimeTotals(cur,conn,dates)
-        addCrimeTotals(cur,conn,crime_list)
 
-        #uses join to pull data from Crimes and Cases tables and calculate the correlation 
-        cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
-        results = cur.fetchall()
-        conn.commit()
-        setUpCrimesCovidCorrelationTable(cur,conn)
-        addDataCrimeAndCovid(cur,conn,results)
+        #calculates crime totals once Crime table is filled
+        cur.execute("SELECT * FROM Crimes")
+        if len(cur.fetchall()) > 100:
+                dates = getCrimeDatesList("covid_data.db","Crimes")
+                crime_list = getCrimeTotals(cur,conn,dates)
+                addCrimeTotals(cur,conn,crime_list)
         
+
+        #calculates crime/covid correlation once CrimeTotals table is filled
+        cur.execute("SELECT * FROM CrimeTotals")
+        if len(cur.fetchall()) > 100:
+                 #uses join to pull data from Crimes and Cases tables and calculate the correlation
+                cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
+                results = cur.fetchall()
+                conn.commit()
+                setUpCrimesCovidCorrelationTable(cur,conn)
+                addDataCrimeAndCovid(cur,conn,results)
+                writecalc(calculateCrimeCovidCorr(cur, conn, results))
         
 
 if __name__ == "__main__":
