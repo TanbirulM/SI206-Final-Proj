@@ -30,7 +30,7 @@ def addData(cur, conn, data):
                 offenses.append(crime["properties"]["OFFENSE"])
                 
         #for the first 100 entries, enters 25 rows at a time
-        cur.execute("SELECT * FROM Weather")
+        cur.execute("SELECT * FROM Crimes")
         entries = cur.fetchall()
         if len(entries) == 0:
                 for i in range(25):
@@ -49,7 +49,7 @@ def addData(cur, conn, data):
                         cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
                         conn.commit()
         elif len(entries) == 100:
-                for i in range(75, len(dates)):
+                for i in range(100, len(dates)):
                         cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
                         conn.commit()
 
@@ -97,10 +97,33 @@ def addCrimeTotals(cur,conn,data):
         for item in data:
                 dates_list.append(item[0])
                 crime_totals_list.append(item[1])
-        for i in range(166, len(dates_list)):
-                cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
-                conn.commit()
+        
+        #for the first 100 entries, enters 25 rows at a time
+        cur.execute("SELECT * FROM CrimeTotals")
+        entries = cur.fetchall()
+        if len(entries) == 0:
+                for i in range(25):
+                        cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                        conn.commit()
+        elif len(entries) == 25:
+                for i in range(25,50):
+                        cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                        conn.commit()
+        elif len(entries) == 50:
+                for i in range(50,75):
+                        cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                        conn.commit()
+        elif len(entries) == 75:
+                for i in range(75,100):
+                        cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                        conn.commit()
+        elif len(entries) == 100:
+                for i in range(100,len(dates_list)):
+                        cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
+                        conn.commit()
 
+        
+      
 #creates CrimesCovidCorrelation Table
 def setUpCrimesCovidCorrelationTable(cur,conn):
         cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovidCorrelation (Date INTEGER, Cases INTEGER, Crimes INTEGER, Crimes_Per_Case INTEGER)")
@@ -111,7 +134,7 @@ def setUpCrimesCovidCorrelationTable(cur,conn):
 def calculateCrimeCovidCorr(cur, conn, results):
         tuple_list = results
         crimecovid_dict = {}
-        i = 0
+
         for tup in tuple_list:
                 #date as key in dict
                 #calculated correlation as key value
@@ -119,15 +142,36 @@ def calculateCrimeCovidCorr(cur, conn, results):
                         crimecovid_dict[tup[0]] = 'N/A'
                 else:
                         crimecovid_dict[tup[0]] = tup[2]/tup[1]
-                i += 1
+       
         return crimecovid_dict
 
 #adds calculated correlations into CrimesCovidCorrelation Table
 def addDataCrimeAndCovid(cur,conn,data):
         corr_dict = calculateCrimeCovidCorr(cur,conn,data)
-        for i in range(len(corr_dict)):
-                cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
-                conn.commit()
+
+        #for the first 100 entries, enters 25 rows at a time
+        cur.execute("SELECT * FROM CrimesCovidCorrelation")
+        entries = cur.fetchall()
+        if len(entries) == 0:
+                for i in range(25):
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        conn.commit()
+        elif len(entries) == 25:
+                for i in range(25,50):
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        conn.commit()
+        elif len(entries) == 50:
+                for i in range(50,75):
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        conn.commit()
+        elif len(entries) == 75:
+                for i in range(75,100):
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        conn.commit()
+        elif len(entries) == 100:
+                for i in range(100,len(corr_dict)):
+                        cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                        conn.commit()
 
 
 def main():
@@ -140,14 +184,14 @@ def main():
         addData(cur,conn,data)
         dates = getCrimeDatesList("covid_data.db","Crimes")
         crime_list = getCrimeTotals(cur,conn,dates)
-        #addCrimeTotals(cur,conn,crime_list)
+        addCrimeTotals(cur,conn,crime_list)
 
         #uses join to pull data from Crimes and Cases tables and calculate the correlation 
         cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
         results = cur.fetchall()
         conn.commit()
         setUpCrimesCovidCorrelationTable(cur,conn)
-        #addDataCrimeAndCovid(cur,conn,results)
+        addDataCrimeAndCovid(cur,conn,results)
         
         
 
