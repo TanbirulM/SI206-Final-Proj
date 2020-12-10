@@ -39,7 +39,10 @@ def get_covid_cases_data(cur, conn, date):
             return None
     #lets me know if data does already exist in table 
     else:
-        print("Data already exists")
+        response = requests.get(url)
+        json_data = json.loads(response.text)
+        cases = json_data.get('positive')
+        print("Data already exists: " + str(date) + ":" + str(cases))
         return None
     
 #adds data to database table Cases 25 items at a time for the first 100 items
@@ -50,22 +53,22 @@ def add_data_to_database(cur, conn, dates,cases):
         for i in range(25):
             cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
             conn.commit()
-        elif len(entries) == 25:
-            for i in range(25,50):
-                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
-                conn.commit()
-        elif len(entries) == 50:
-            for i in range(50,75):
-                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
-                        conn.commit()
-        elif len(entries) == 75:
-            for i in range(75,100):
-                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
-                conn.commit()
-        elif len(entries) == 100:
-            for i in range(100, len(dates)):
-                cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
-                conn.commit()
+    elif len(entries) == 25:
+        for i in range(25,50):
+            cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+            conn.commit()
+    elif len(entries) == 50:
+        for i in range(50,75):
+            cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+            conn.commit()
+    elif len(entries) == 75:
+        for i in range(75,100):
+            cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+            conn.commit()
+    elif len(entries) == 100:
+        for i in range(100, len(dates)):
+            cur.execute("INSERT INTO Cases (Date, Cases) Values (?,?)", (dates[i], cases[i],))
+            conn.commit()
 
 
 
@@ -211,7 +214,7 @@ def main():
         url = get_request_url(date)
         data = get_covid_cases_data(cur,conn,date)
         cases_list.append(data)
-        
+
 #adding data to Cases table based on dates list and postiive cases list
     add_data_to_database(cur,conn,flat_dates_list,cases_list)
 
