@@ -66,6 +66,7 @@ def getCrimeTotals(cur,conn,covid_dates_list):
 def addCrimeTotals(cur,conn,data):
         dates_list = []
         crime_totals_list = []
+        
         for item in data:
                 dates_list.append(item[0])
                 crime_totals_list.append(item[1])
@@ -74,12 +75,13 @@ def addCrimeTotals(cur,conn,data):
                 conn.commit()
 
 def setUpCrimeAndCovidTable(cur,conn):
-        cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovid (Date INTEGER, Cases INTEGER, Crimes INTEGER)")
+        cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovidCorrelation (Date INTEGER, Cases INTEGER, Crimes INTEGER, Crimes_Per_Case INTEGER)")
         conn.commit()
 
 def addDataCrimeAndCovid(cur,conn,data):
-        for i in range(25):
-                cur.execute("INSERT INTO CrimesCovid (Date,Cases,Crimes) Values (?,?,?)",(data[i][0],data[i][1],data[i][2],))
+        corr_dict = calculateCrimeCovidCorr(cur,conn,data)
+        for i in range(len(corr_dict)):
+                cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
                 conn.commit()
 
 def calculateCrimeCovidCorr(cur, conn, results):
@@ -113,9 +115,9 @@ def main():
         results = cur.fetchall()
         conn.commit()
         setUpCrimeAndCovidTable(cur,conn)
-        #addDataCrimeAndCovid(cur,conn,results)
-        #calculateCrimeCovidCorr(cur,conn,results)
-        print(calculateCrimeCovidCorr(cur, conn, results))
+        addDataCrimeAndCovid(cur,conn,results)
+        
+        
 
 if __name__ == "__main__":
     main()
