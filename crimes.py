@@ -82,7 +82,19 @@ def addDataCrimeAndCovid(cur,conn,data):
                 cur.execute("INSERT INTO CrimesCovid (Date,Cases,Crimes) Values (?,?,?)",(data[i][0],data[i][1],data[i][2],))
                 conn.commit()
 
-
+def calculateCrimeCovidCorr(cur, conn, results):
+        tuple_list = results
+        crimecovid_dict = {}
+        i = 0
+        for tup in tuple_list:
+                #date as key in dict
+                #calculated correlation as key value
+                if tup[1] == 0:
+                        crimecovid_dict[tup[0]] = 'N/A'
+                else:
+                        crimecovid_dict[tup[0]] = tup[2]/tup[1]
+                i += 1
+        return crimecovid_dict
 
 
 def main():
@@ -100,10 +112,10 @@ def main():
         cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
         results = cur.fetchall()
         conn.commit()
-        print(results)
         setUpCrimeAndCovidTable(cur,conn)
-        addDataCrimeAndCovid(cur,conn,results)
-  
+        #addDataCrimeAndCovid(cur,conn,results)
+        #calculateCrimeCovidCorr(cur,conn,results)
+        print(calculateCrimeCovidCorr(cur, conn, results))
 
 if __name__ == "__main__":
     main()
