@@ -4,10 +4,12 @@ import os
 import requests
 import re
 
+#creates Crimes table
 def setUpCrimesTable(cur, conn):
         cur.execute("CREATE TABLE IF NOT EXISTS Crimes (Date INTEGER, Offense TEXT)")
         conn.commit()
 
+#gets data for Crimes table
 def getCrimesData(cur, conn):
     url = "https://opendata.arcgis.com/datasets/f516e0dd7b614b088ad781b0c4002331_2.geojson"
     response = requests.get(url)
@@ -15,7 +17,7 @@ def getCrimesData(cur, conn):
     return json_data
 
 
-
+#pulls offenses and date commited from url and adds them to Crimes table
 def addData(cur, conn, data):
         crimes = data["features"]
         dates = []
@@ -27,15 +29,38 @@ def addData(cur, conn, data):
                 dates.append(date)
                 offenses.append(crime["properties"]["OFFENSE"])
                 
-        #change range value to insert 25 values at a time i.e. range(25, 50); range (50, 75) etc.
-        for i in range(25):
-                cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
-        conn.commit()
+        #for the first 100 entries, enters 25 rows at a time
+        cur.execute("SELECT * FROM Weather")
+        entries = cur.fetchall()
+        if len(entries) == 0:
+                for i in range(25):
+                        cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
+                        conn.commit()
+        elif len(entries) == 25:
+                for i in range(25,50):
+                        cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
+                        conn.commit()
+        elif len(entries) == 50:
+                for i in range(50,75):
+                        cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
+                        conn.commit()
+        elif len(entries) == 75:
+                for i in range(75,100):
+                        cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
+                        conn.commit()
+        elif len(entries) == 100:
+                for i in range(75, len(dates)):
+                        cur.execute("INSERT INTO Crimes (Date, Offense) Values (?,?)", (dates[i], offenses[i],))
+                        conn.commit()
 
-def setUpCrimeNumberTable(cur,conn):
+
+
+#creates CrimeTotals Table
+def setUpCrimeTotalsTable(cur,conn):
         cur.execute("CREATE TABLE IF NOT EXISTS CrimeTotals (Date INTEGER, Crimes INTEGER)")
         conn.commit()
 
+#gets dates list for date column in CrimeTotals Table
 def getCrimeDatesList(db_name, table_name):
    path = os.path.dirname(os.path.abspath(__file__))
    conn = sqlite3.connect(path+'/'+ db_name)
@@ -52,6 +77,7 @@ def getCrimeDatesList(db_name, table_name):
    cur.close()
    return covid_dates_list
 
+#calculates daily number of crimes from Crimes Table
 def getCrimeTotals(cur,conn,covid_dates_list):
         crime_totals_dict = {}
         for date in covid_dates_list:
@@ -63,6 +89,7 @@ def getCrimeTotals(cur,conn,covid_dates_list):
         sorted_crime_tuples = sorted(dictionary_items)
         return sorted_crime_tuples
 
+#adds daily number of crimes to CrimeTotals table
 def addCrimeTotals(cur,conn,data):
         dates_list = []
         crime_totals_list = []
@@ -74,16 +101,13 @@ def addCrimeTotals(cur,conn,data):
                 cur.execute("INSERT INTO CrimeTotals (Date, Crimes) Values (?,?)", (dates_list[i], crime_totals_list[i],))
                 conn.commit()
 
-def setUpCrimeAndCovidTable(cur,conn):
+#creates CrimesCovidCorrelation Table
+def setUpCrimesCovidCorrelationTable(cur,conn):
         cur.execute("CREATE TABLE IF NOT EXISTS CrimesCovidCorrelation (Date INTEGER, Cases INTEGER, Crimes INTEGER, Crimes_Per_Case INTEGER)")
         conn.commit()
 
-def addDataCrimeAndCovid(cur,conn,data):
-        corr_dict = calculateCrimeCovidCorr(cur,conn,data)
-        for i in range(len(corr_dict)):
-                cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
-                conn.commit()
 
+#Calculates number of covid cases' effect on number of crimes by dividing number of daily crimes by number of daily cases
 def calculateCrimeCovidCorr(cur, conn, results):
         tuple_list = results
         crimecovid_dict = {}
@@ -98,24 +122,32 @@ def calculateCrimeCovidCorr(cur, conn, results):
                 i += 1
         return crimecovid_dict
 
+#adds calculated correlations into CrimesCovidCorrelation Table
+def addDataCrimeAndCovid(cur,conn,data):
+        corr_dict = calculateCrimeCovidCorr(cur,conn,data)
+        for i in range(len(corr_dict)):
+                cur.execute("INSERT INTO CrimesCovidCorrelation (Date,Cases,Crimes, Crimes_Per_Case) Values (?,?,?,?)",(data[i][0],data[i][1],data[i][2],corr_dict[data[i][0]],))
+                conn.commit()
+
 
 def main():
         path = os.path.dirname(os.path.abspath(__file__))
         conn = sqlite3.connect(path+ '/' + "covid_data.db")
         cur = conn.cursor()
         setUpCrimesTable(cur,conn)
-        setUpCrimeNumberTable(cur,conn)
-       # data = getCrimesData(cur,conn)
-       # addData(cur,conn,data)
-       # dates = getCrimeDatesList("covid_data.db","Crimes")
-       # crime_list = getCrimeTotals(cur,conn,dates)
-       # addCrimeTotals(cur,conn,crime_list)
+        setUpCrimeTotalsTable(cur,conn)
+        data = getCrimesData(cur,conn)
+        addData(cur,conn,data)
+        dates = getCrimeDatesList("covid_data.db","Crimes")
+        crime_list = getCrimeTotals(cur,conn,dates)
+        #addCrimeTotals(cur,conn,crime_list)
 
+        #uses join to pull data from Crimes and Cases tables and calculate the correlation 
         cur.execute("SELECT Cases.Date, Cases.Cases, CrimeTotals.Crimes FROM Cases JOIN CrimeTotals ON Cases.Date = CrimeTotals.Date")
         results = cur.fetchall()
         conn.commit()
-        setUpCrimeAndCovidTable(cur,conn)
-        addDataCrimeAndCovid(cur,conn,results)
+        setUpCrimesCovidCorrelationTable(cur,conn)
+        #addDataCrimeAndCovid(cur,conn,results)
         
         
 
