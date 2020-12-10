@@ -23,8 +23,7 @@ def get_food_recall_data(cur, conn, search_query, search_limit):
     json_data = json.loads(response.text)
     return json_data
 
-    
-
+# adding the selected data to the table within the database    
 def add_data_to_database(cur, conn, data):
     results_data = data["results"]
     for i in results_data:
@@ -42,7 +41,6 @@ def add_data_to_database(cur, conn, data):
         conn.commit()
 
 def main():
-
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
@@ -55,11 +53,6 @@ def main():
     # We are requesting to see the first 100 records that match.
     data = get_food_recall_data(cur, conn, search_query, search_limit)
     add_data_to_database(cur,conn,data)
-
-
-    #data = get_covid_cases_data(cur,conn,date_test, woeid)
-    #print(data)
-    #add_data_to_database(cur,conn,data)
 
 
 

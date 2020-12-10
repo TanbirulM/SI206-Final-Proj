@@ -5,6 +5,7 @@ import re
 import matplotlib
 import matplotlib.pyplot as plt
 
+#grabbing data from Food_Recall table in database and putting them into a list of tuples
 def food_recall_lst(db_name, table_name):
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+'/'+ db_name)
@@ -12,7 +13,6 @@ def food_recall_lst(db_name, table_name):
 
     data_lst = []
 
-    # Only retrieve the Symbol and Price information from the given table
     cur.execute('SELECT * From ' + table_name)
     rows = cur.fetchall()
     #print(rows)
@@ -33,6 +33,7 @@ def food_recall_lst(db_name, table_name):
     #print(data_lst)
     return data_lst
 
+#returning a list of a single tuple that has the counts of the classes of food recalls
 def food_recall_classifications(recall_lst):
     class_1_count = 0
     class_2_count = 0 

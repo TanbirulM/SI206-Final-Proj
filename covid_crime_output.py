@@ -21,18 +21,27 @@ def crime_covid_lst(db_name, table_name):
         cases = i[1]
         crimes = i[2]
         correlation = i[3]
+        # if there is no correlation, change 'N/A' to None so calculations can be made on that date
         if correlation == "N/A":
             correlation = None
         data_lst.append((date, cases, crimes, correlation))
     cur.close()
     return data_lst
 
+def write_csv(data_lst):
+    with open('covid_crime_correlation.csv', 'w') as food_recall_dump:
+        f = csv.writer(food_recall_dump, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        f.writerow(["Date", "Covid_Cases", "Crime_Cases", "Correlation"])
+
+        for i in data_lst:
+            f.writerow([i[0], i[1], i[2], i[2]])
+        
+
 def get_date_lst(data_lst):
     date_lst = []
     for i in data_lst:
         date_lst.append(i[0])
     
-    print(len(date_lst))
     return date_lst
 
 def get_cases_lst(data_lst):    
@@ -42,7 +51,6 @@ def get_cases_lst(data_lst):
             i[1] == None
         cases_lst.append(i[1])
 
-    print(len(cases_lst))
     return cases_lst
 
 def get_crimes_lst(data_lst):
@@ -50,10 +58,9 @@ def get_crimes_lst(data_lst):
     for i in data_lst:
         crimes_lst.append(i[2])
     
-    print(len(crimes_lst))
     return crimes_lst
 
-# This creates a pie chart using the data of a given list with three elements
+# double line chart to show the crimes per day vs covid cases per day
 def create_double_line_chart(data_lst):
     #data for plotting
     y = get_date_lst(data_lst)
@@ -82,8 +89,8 @@ def create_double_line_chart(data_lst):
     # show the line graph
     plt.show() 
   
-
-def create_scatterplot_high_low(data_lst):
+# scatter plot to show the correlation of covid and crime per day
+def create_scatterplot(data_lst):
 
     date = []
     correlation = []
@@ -107,8 +114,9 @@ def create_scatterplot_high_low(data_lst):
 
 def main():
     data_lst = crime_covid_lst('covid_data.db', 'CrimesCovidCorrelation')
+    write_csv(data_lst)
     create_double_line_chart(data_lst)
-    create_scatterplot_high_low(data_lst)
+    create_scatterplot(data_lst)
 
 
 if __name__ == "__main__":
