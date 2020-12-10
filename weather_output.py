@@ -4,6 +4,7 @@ import csv
 import matplotlib
 import matplotlib.pyplot as plt
 
+
 def weather_lst(db_name, table_name):
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+'/'+ db_name)

@@ -66,8 +66,6 @@ def write_csv(data_lst, classification_lst):
         for i in classification_lst:
             f.writerow([i[0], i[1], i[2]])
 
-        
-
 def create_class_chart(classification_lst):
     class_1 = classification_lst[0][0]
     class_2 = classification_lst[0][1]
@@ -76,14 +74,13 @@ def create_class_chart(classification_lst):
     classes = ['Class I', 'Class II', 'Class III']
     counts = [class_1, class_2, class_3]
 
-    plt.figure(1, figsize=(9, 3))
-    plt.subplot(131)
-    plt.bar(classes, counts)
-    plt.subplot(132)
-    plt.scatter(classes, counts)
-    plt.subplot(133)
-    plt.plot(classes, counts)
-    plt.suptitle('Records in the Food Enforcement Report: Classifications')
+    #plt.figure(1, figsize=(14, 4), sharey=True)
+    fig, axs = plt.subplots(1, 3, figsize=(9, 3), sharey=True)
+    axs[0].bar(classes, counts)
+    axs[1].scatter(classes, counts)
+    axs[2].plot(classes, counts)
+    
+    fig.suptitle('Categorical Plotting of Food Recall Classifications')
 
     plt.savefig("classifications_chart.png")
     plt.show()
