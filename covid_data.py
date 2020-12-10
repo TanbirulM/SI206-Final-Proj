@@ -26,12 +26,13 @@ def get_covid_cases_data(cur, conn, date):
     cur.execute("SELECT * FROM Cases WHERE Date = ?", (date, ))
     exists = cur.fetchone()
 
+
     #if data not already in table, try grabbing data and returning # of positive cases
     if exists == None:
         try:
             response = requests.get(url)
             json_data = json.loads(response.text)
-            cases = json_data.get['positive']
+            cases = json_data.get('positive')
             return cases
     #if exception occurs, prints exception
         except:
@@ -39,15 +40,12 @@ def get_covid_cases_data(cur, conn, date):
             return None
     #lets me know if data does already exist in table 
     else:
-        response = requests.get(url)
-        json_data = json.loads(response.text)
-        cases = json_data.get('positive')
-        print("Data already exists: " + str(date) + ":" + str(cases))
+        print("Data already exists")
         return None
     
 #adds data to database table Cases 25 items at a time for the first 100 items
-def add_data_to_database(cur, conn, dates,cases):
-    cur.execute("SELECT * FROM Crimes")
+def add_data_to_database(cur, conn, dates, cases):
+    cur.execute("SELECT * FROM Cases")
     entries = cur.fetchall()
     if len(entries) == 0:
         for i in range(25):
@@ -211,9 +209,10 @@ def main():
 #getting a list of the positive cases in chronological order to be added to the table
     cases_list = []
     for date in flat_dates_list:
-        url = get_request_url(date)
         data = get_covid_cases_data(cur,conn,date)
         cases_list.append(data)
+
+    
 
 #adding data to Cases table based on dates list and postiive cases list
     add_data_to_database(cur,conn,flat_dates_list,cases_list)
