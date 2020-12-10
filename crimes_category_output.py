@@ -10,17 +10,17 @@ def crime_lst(db_name, table_name):
     conn = sqlite3.connect(path+'/'+ db_name)
     cur = conn.cursor()
 
-    # Only retrieve the Symbol and Price information from the given tablepap
-    cur.execute('SELECT * From ' + table_name)
+    # retrieves all data from Crime table
+    cur.execute('SELECT * FROM ' + table_name)
     rows = cur.fetchall()
 
     offense_lst = []
-    #print(rows)
+   
     for i in rows:
         date = i[0]
         offense = i[1]
         offense_lst.append((date, offense))
-    cur.close()
+    conn.close()
     return offense_lst
 
 def crime_per_category(offense_lst):

@@ -25,48 +25,67 @@ def write_weather_calc(cw_dict):
         f.write("On " + formatted_date + ", the correlation between daily number of crimes and daily average temperature was " + str(cw_dict[date]) + "crimes per degree of temperature (fahrenheit).\n\n")
     f.close()
 
-def crime_per_category(offense_lst):
-    #list of the amount of instances per crime category
-    category_lst = []
+def crime_per_category(cur,conn):
+    # retrieves all data from Crime table
+    cur.execute('SELECT * FROM Crimes')
+    rows = cur.fetchall()
 
-    theft_other = 0
-    theft_auto = 0
-    motor_vehicle_theft = 0
-    robbery = 0
-    assault = 0
-    burglary = 0
-    homicide = 0
-    sex_abuse = 0
-    arson = 0
+    offense_lst = []
+
+    for i in rows:
+        date = i[0]
+        offense = i[1]
+        offense_lst.append((date, offense))
+    conn.close()
+    
+    #list of the amount of instances per crime category
+    category_dict = {}
+
+    category_dict["theft_other"] = 0
+    category_dict["theft_auto"] = 0
+    category_dict["motor_vehicle_theft"] = 0
+    category_dict["robbery"] = 0
+    category_dict["assault"] = 0
+    category_dict["burglary"] = 0
+    category_dict["homicide"] = 0
+    category_dict["sex_abuse"] = 0
+    category_dict["arson"] = 0
 
     for i in offense_lst:
         if i[1] == "THEFT/OTHER":
-            theft_other += 1
+            category_dict["theft_other"] += 1
         elif i[1] == "THEFT F/AUTO":
-            theft_auto += 1
+            category_dict["theft_auto"] += 1
         elif i[1] == "MOTOR VEHICLE THEFT":
-            motor_vehicle_theft += 1
+            category_dict["motor_vehicle_theft"] += 1
         elif i[1] == "ROBBERY":
-            robbery += 1
+            category_dict["robbery"] += 1
         elif i[1] == "ASSAULT W/DANGEROUS WEAPON":
-            assault += 1
+            category_dict["assault"] += 1
         elif i[1] == "BURGLARY":
-            burglary += 1
+            category_dict["burglary"] += 1
         elif i[1] == "HOMICIDE":
-            homicide += 1
+            category_dict["homicide"] += 1
         elif i[1] == "SEX ABUSE":
-            sex_abuse += 1
+            category_dict["sex_abuse"] += 1
         else:
-            arson += 1
+            category_dict["arson"] += 1
         
-    category_lst.append((theft_other, theft_auto, motor_vehicle_theft, robbery, assault, burglary, homicide, sex_abuse, arson))
-    return category_lst
-    
+    return category_dict
+
+def write_crimecat_calc(category_dict):
+    f = open('calculations.txt', 'a+')
+    f.write("\n\nNumber of Crimes By Type of Offense:\n\n")
+    for offense in category_dict:
+        f.write(offense + ": " + str(category_dict[offense] + "\n\n"))  
+    f.close()
+
+
 def main():
     path = os.path.dirname(os.path.abspath(__file__))
     conn = sqlite3.connect(path+ '/' + "covid_data.db")
     cur = conn.cursor()
     write_weather_calc(calc_weathercrimecorr(cur,conn))
-
+    write_crimecat_calc(crime_per_category(cur,conn))
 if __name__ == "__main__":
     main()
