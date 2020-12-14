@@ -30,7 +30,7 @@ def food_recall_lst(db_name, table_name):
 
         data_lst.append((state, quantity, classification))
     cur.close()
-    #print(data_lst)
+    
     return data_lst
 
 #returning a list of a single tuple that has the counts of the classes of food recalls

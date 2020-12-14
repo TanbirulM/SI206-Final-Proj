@@ -5,15 +5,18 @@ import requests
 import json
 import os 
 
+#creates weather table
 def create_weather_table(cur, conn):
     cur.execute("CREATE TABLE IF NOT EXISTS Weather (Date INTEGER, Low INTEGER, High Integer)")
     conn.commit()
 
+#gets url for each date
 def get_request_url(date, woeid):
     base_url = "https://www.metaweather.com"
     request_url = base_url + "/api/location/{}/{}/" .format(woeid, date)
     return request_url
 
+#gets data from url and puts it in json format
 def get_weather_data(cur, conn, date, woeid):
     url = get_request_url(date, woeid)
     cur.execute("SELECT * FROM Weather WHERE Date = ?", (date, ))
@@ -30,7 +33,7 @@ def get_weather_data(cur, conn, date, woeid):
         print("Data already exists")
         return None
     
-
+#adds weather data to table
 def add_data_to_database(cur, conn, data):
     if data != None:
         date = data[0].get('applicable_date')
@@ -131,7 +134,7 @@ def main():
     create_weather_table(cur,conn)
 
 
-    
+    #adds 25 entries at a time for the first 100 rows
     index = 1
     cur.execute("SELECT * FROM Weather")
     entries = cur.fetchall()

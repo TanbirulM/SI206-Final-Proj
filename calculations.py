@@ -1,6 +1,7 @@
 import sqlite3
 import json
 import os
+import re
 
 
 #calculate correlation between weather(degrees of temperature) and crime by dividing number of daily crimes by daily average temperature
@@ -16,6 +17,7 @@ def calc_weathercrimecorr(cur,conn):
   
     return calc_dict
 
+#writes crime/weather correlation to text file
 def write_weather_calc(cw_dict):
     f = open('calculations.txt', 'a+')
     f.write("Correlation between Daily Number of Crimes and Daily Average Temp:\n\n")
@@ -25,6 +27,7 @@ def write_weather_calc(cw_dict):
         f.write("On " + formatted_date + ", the correlation between daily number of crimes and daily average temperature was " + str(cw_dict[date]) + "crimes per degree of temperature (fahrenheit).\n\n")
     f.close()
 
+#calculates number of crimes per category
 def crime_per_category(cur,conn):
     # retrieves all data from Crime table
     cur.execute('SELECT * FROM Crimes')
@@ -36,7 +39,7 @@ def crime_per_category(cur,conn):
         date = i[0]
         offense = i[1]
         offense_lst.append((date, offense))
-    conn.close()
+     
     
     #list of the amount of instances per crime category
     category_dict = {}
@@ -73,13 +76,58 @@ def crime_per_category(cur,conn):
         
     return category_dict
 
+#writes number of crimes per category to the text file
 def write_crimecat_calc(category_dict):
     f = open('calculations.txt', 'a+')
     f.write("\n\nNumber of Crimes By Type of Offense:\n\n")
     for offense in category_dict:
-        f.write(offense + ": " + str(category_dict[offense] + "\n\n"))  
+        f.write(offense + ": " + str(category_dict[offense]) + "\n\n") 
     f.close()
 
+#calculates number of food recalls by class type
+def food_recall_classifications(cur,conn):
+    data_lst = []
+
+    cur.execute('SELECT * FROM Food_Recall')
+    rows = cur.fetchall()
+
+    for i in rows:
+        state = i[2]
+        quantity = i[5]
+        quantity = quantity.replace(',', '')
+        quantity = re.findall('\d+', quantity)
+        if len(quantity) > 0:
+            quantity = quantity[0]
+        else:
+            quantity = None    
+        classification = i[6]
+
+        data_lst.append((state, quantity, classification))
+    conn.close()
+
+    classification_dict = {}
+    classification_dict["Class I"] = 0
+    classification_dict["Class II"] = 0 
+    classification_dict["Class III"] = 0
+
+
+    for i in data_lst:
+        if i[2] == 'Class I':
+            classification_dict["Class I"] += 1
+        elif i[2] == 'Class II':
+            classification_dict["Class II"] += 1
+        else:
+            classification_dict["Class III"] += 1
+    
+    return classification_dict
+
+#writes foodrecall calculations to file
+def write_foodrecallclass(class_dict):
+    f = open('calculations.txt', 'a+')
+    f.write("\n\n(EXTRA CREDIT) Number in Each Food Recall Class (I, II, or III) that is assigned by FDA to a particular product recall that indicates the relative degree of health hazard.:\n\n")
+    for clas in class_dict:
+        f.write(clas + ": " + str(class_dict[clas]) + "\n\n")  
+    f.close()
 
 def main():
     path = os.path.dirname(os.path.abspath(__file__))
@@ -87,5 +135,8 @@ def main():
     cur = conn.cursor()
     write_weather_calc(calc_weathercrimecorr(cur,conn))
     write_crimecat_calc(crime_per_category(cur,conn))
+    write_foodrecallclass(food_recall_classifications(cur,conn))
+    conn.close()
+
 if __name__ == "__main__":
     main()
